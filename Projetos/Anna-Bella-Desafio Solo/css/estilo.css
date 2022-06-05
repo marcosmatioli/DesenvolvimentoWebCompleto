@@ -1,0 +1,47 @@
+body{
+    background: blueviolet url('imagens/fundo.png') ;
+    font:16px Arial;
+    color: white;
+}
+#principal{
+    width: 900px;
+}
+#menu{
+    background-color: violet;
+    text-align: center;
+    padding: 10px;
+    
+}
+.menuinside{
+    
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+}
+#conteudo{
+    background-color:rebeccapurple;
+    padding: 13px;
+}
+.fotos{
+    border: 5px solid rgb(192, 71, 117);
+    
+}
+.contato{
+    padding: 5px;
+    font-weight: bold;
+    
+}
+.telefone{
+    padding: 10px;
+    
+}
+.email{
+    padding: 10px;
+   
+}
+#rodape{
+    padding-top: 20px;
+    text-align: center;
+    
+}
+

@@ -1,0 +1,14 @@
+*{
+padding: 0px;
+margin: 0px;
+}
+body{
+    color: red;
+    border: 1px solid blue;
+}   
+.pagina{
+border: 5px solid green;
+}
+p{
+    color: blue;
+}

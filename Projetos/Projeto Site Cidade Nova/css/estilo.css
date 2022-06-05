@@ -1,0 +1,204 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+ul{ /*padrão para todas as UL*/
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+a:link, a:visited{
+    color: #b10333;
+    padding: 5px;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+    background: #fff url('../imagens/fundo.png') repeat-x top left;
+}
+#container{
+    width: 800px;
+    margin: 0px auto; /*centraliza o conteudo colocando auto em left and right*/
+}
+#topo{
+    height: 160px;
+    background: url('../imagens/detalhe-topo.png') no-repeat right top;
+    padding-top: 20px;
+}
+.logo{
+    width: 152px;
+    height: 66px;
+    background: url('../imagens/logo.png') no-repeat center;
+    text-indent: -3000px; /*ocultar coisa na tela*/
+}
+
+#topo ul{/*barra de navegação*/
+    background: #b10333;
+    margin-top: 30px;
+    float: left;
+}
+#topo ul li{
+    float: left;
+}
+#topo ul li a{
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: #fff;
+    background: url('../imagens/divisor.png') no-repeat right;
+}
+#topo ul .ultimo a{
+    background: none;
+}
+#topo ul a:hover{
+    color: #69001d;
+}
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos{/*hover para ficar marcado em vermelho a pagina*/
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
+#conteudo{/*conteudo do site*/
+    background: #f5f5f5;
+    margin-top: 60px;
+}
+#lateral{
+    width: 180px;
+    width: right;
+    float: left;
+    margin: 0 0 20px -750px;
+}
+#primario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+}
+#primario{ /*padrão das colunas, 3 colunas*/
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+}
+#duas-colunas #primario{ /*2 colunas na materia*/
+    width: 555px;
+}
+#uma-coluna #primario{ /*1 coluna sem barra lateral*/
+    width: 750px;
+    margin: 0 0 20px 0px;
+}
+#secundario{/*coluna secundaria*/
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px; /*é como um relogio de cima para baixo da esquerda pra direita*/
+}
+.caixa{
+    margin: 10px 0px;
+    padding: 5px;
+    background: #fefefe url('../imagens/fundo-caixa.png');
+}
+h2{ /*formatação de h2 padrão*/
+    font-size: 1em;
+    background-color: #294c71;
+    color: white;
+    padding: 8px;
+}
+.caixa-conteudo{
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+/*menu vertical*/
+#lateral ul a{
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+#lateral ul a:hover{
+    background: #f9f9f9 url('../imagens/marcador.png')no-repeat left center;
+    color: #a1a1a1;
+    padding-left: 20px;
+}
+label{
+    display: block;
+    cursor: pointer;
+}
+input{
+    font: 0.9em;
+    width: 125px;
+    background: #fff;
+    padding: 5px;
+    margin: 8px auto;
+}
+input.submit{
+    width: 80px;
+    color: #fff;
+    background-color: #b10333 ;
+    border: 2px solid #870529;
+}
+/*Formatação de imagem*/
+img{
+    border: 2px solid #dfdfdf;
+}
+img.imagem-principal{
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+h3{
+    text-transform: uppercase;
+    display:inline;
+    padding: 3px;
+    font-size: 0.8em;
+}
+.destaque h3{
+    background: #b10333;
+    color: #fff;
+}
+.entrevista h3{
+    background-color: #de003e;
+}
+/*lista de notica*/
+#lista-noticia li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 63px;
+}
+#lista-noticia li a img{
+    float: left;
+    margin: 5px;
+}
+#lista-noticia li a{
+   text-decoration: none;
+}
+#lista-noticia li h3{
+    font-size: 0.8em;
+    padding: 0px;
+    color: #3e7ab9;
+ }
+ #lista-noticia li a p{
+    font-size: 0.7em;
+ }
+ #lista-noticia li:hover{
+    background: #eee;
+    cursor: pointer;
+ }
+/*rodape do site*/
+#container-rodape{
+    text-align: center;
+    background-color: #294c71;
+    padding: 20px;
+    clear: both;
+    margin: 0px auto; 
+    color: white;
+}

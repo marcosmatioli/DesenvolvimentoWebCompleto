@@ -1,0 +1,43 @@
+body{
+    background: #007fc7;
+}
+#container{
+    background: white;
+    width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+}
+h1{
+    border: 1px solid red;
+    text-align: center;
+    position: relative;
+    bottom: 25px;
+    margin-bottom: 20px;
+}
+p{
+    width: 300px;
+}
+.relative{
+    border: 1px solid red;
+    position: relative;
+    left: 200px;
+}
+.ab{ /*baseado no container que ele esta, 
+    importante o container ter o comportamente de 
+    relativo se não não adianta */
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    border: 1px solid pink;
+    background: yellow;
+}
+.fixa{ /*na janela do navergador*/
+    border:2px solid orange;
+    background: black;
+    color: white;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+}

@@ -1,0 +1,67 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f2f2f2;
+}
+#container{
+    width: 85%;
+    margin: 0 auto; /*cima baixo esquerda direita*/
+    min-width: 820px;
+   /* max-width: 1080px;*/
+}
+#marca{
+    background: #225992 url(../imagens/cabecalho2.jpg) no-repeat center;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+#conteudo{
+    width: 74%;
+    float: right;
+}
+
+#navegacao{
+    width: 24%;
+    float: left;
+    text-align: center;
+}
+#conteudo h2,p{
+    padding: 20px;
+}
+/*#navegacao:hover{
+    background: blue; posso colocar hover onde quiser
+}*/
+#navegacao ul>li{
+    padding: 10px;
+    list-style-type: none;
+    background: orange;
+}
+#navegacao li:hover{
+    background: orangered;
+}
+#navegacao a{
+    text-decoration: none;
+}
+#conteudo-principal{
+    width: 65%;/*320px;*/
+    float: left;
+}
+#conteudo-principal img{
+    width: 90%;
+    padding: 4%;
+}
+#conteudo-secundario{
+    width: 32%;/*180px;*/
+    float: right;
+    background: rebeccapurple;
+}
+#rodape{
+    clear: both;
+    background: yellow;
+    padding: 5px;
+    text-align: center;
+}

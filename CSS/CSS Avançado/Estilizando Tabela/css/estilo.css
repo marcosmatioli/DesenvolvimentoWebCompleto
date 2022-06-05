@@ -1,0 +1,25 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ table{
+     width: 600px;
+     border-collapse: separate;/*separete é o padrão 
+     e o collapse tira a margen e padding entre elas*/
+ }
+ th, td{
+    padding: 7px;
+ }
+ th{
+     text-transform: uppercase;
+     border-top: 1px solid #999;
+     border-bottom: 1px solid #111;
+     text-align: left;
+     font-size: 90%;
+     letter-spacing: 0.1em; /*quanto mais maior o espaço*/
+ }
+ .numero{
+     text-align: right;
+ }
+tr:hover{
+    background-color: cyan;
+}

@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f2f2f2;
+}
+#container{
+    width: 720px;
+    margin: 0 auto; /*cima baixo esquerda direita*/
+    background-color: blue;
+
+}
+#marca{
+    height: 100px;
+    background: red;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 10px;
+}
+#conteudo{
+    width: 520px;
+    float: right;
+    background: yellowgreen;
+   
+}
+#conteudo h2,p{
+    padding: 20px;
+
+}
+#navegacao{
+    width: 180px;
+    float: left;
+    text-align: center;
+}
+/*#navegacao:hover{
+    background: blue; posso colocar hover onde quiser
+}*/
+#navegacao ul>li{
+    padding: 10px;
+    list-style-type: none;
+    background: orange;
+}
+#navegacao li:hover{
+    background: orangered;
+}
+#navegacao a{
+    
+    text-decoration: none;
+}
+#conteudo-principal{
+    width: 320px;
+    float: left;
+}
+#conteudo-secundario{
+    width: 180px;
+    float: right;
+    background: rebeccapurple;
+}
+#rodape{
+    clear: both;
+    background: yellow;
+    padding: 5px;
+    text-align: center;
+}

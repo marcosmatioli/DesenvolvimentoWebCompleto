@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em; /*16px de tamanho*/
+    background: whitesmoke;
+}
+
+/*TOPO*/
+#topo{
+background: orange;
+margin-bottom: 20px;
+font-weight: bold;
+}
+#menu, a{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+}
+#menu  a:hover{
+    border-radius: 5px;
+    color: orange;
+    background-color: white;
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    font: 2.0em;
+    padding: 20px;
+}
+.branco{
+    color: white;
+}
+
+/*area do centro*/
+#area-conteudo{
+    width: 920px;
+    margin: 0px auto;
+}
+#area-conteudo, a:hover{
+    text-decoration: underline;
+}
+#area-conteudo img,p {
+    margin-bottom: 10px;
+}
+#area-conteudo a{
+    padding: 0px;
+    margin: 0px;
+}
+.esquerda{
+    background-color: blanchedalmond;
+    width: 640px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    float: left;
+}
+.direita{
+   background-color: blanchedalmond;
+    width: 200px;
+    padding: 10px;
+    float: right;
+    margin-bottom: 20px;
+    position: relative;
+}
+.borda-separa{
+border-bottom: 1px solid red;
+margin: 10px;
+}
+h3{
+    font-size: 1.5em;
+}
+h4{
+    padding-bottom: 5px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/*rodape*/
+#rodape{
+    padding: 20px;
+    text-align: center;
+    background: gray;
+    font-size: 1.3em;
+    font-weight: bold;
+    clear: both;
+}

@@ -1,0 +1,34 @@
+/*seletor universal*/
+*{
+    padding: 5px;
+    color: black;
+}
+/*seletor de texto*/
+h1{
+    color: blue;
+}
+span.vermelho{
+    color: red;
+}
+p.verde{
+color: green;
+}
+#top{
+    border: 1px solid red;
+}
+li>a{
+    text-decoration: none; /*somente filhos de LI*/
+    color: red;
+}
+p a{
+    color: green; /*qualquer (a) dentro de (p) vai receber os comandos*/
+    text-decoration: none;
+}
+h2+p{
+    color: brown; /*somente o proximo elento p depois de 1 
+    h2 vai receber os comandos*/
+}
+h4~p{
+    color: darkgoldenrod;/*todos os subsequentes de h4 que são p
+    vão receber os comandos*/
+}

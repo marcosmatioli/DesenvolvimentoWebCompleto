@@ -1,0 +1,78 @@
+/* horizontal */
+ul{
+    
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    width: 720px;   height: 2em;
+    background: #159cb0 url('../imagens/fundo-horizontal.png') repeat-x;
+    float: left;
+}
+ul li{
+    float: left;
+}
+ul a{
+    display: block;
+    padding: 0 3em;
+    line-height: 2em;
+    text-decoration: none;
+    color: white;
+    background: url('../imagens/divisor.png') repeat-y;
+}
+ul .primeiro a{
+    background: none;
+}
+ul a:hover{
+    color: #085662;
+    background-color: #44cade;
+}
+#home #navegacao .home a,#sobre #navegacao .sobre a,
+#contato #navegacao .contato a,#servicos #navegacao .servicos a{
+    color: #085662;
+    background-color: #44cade;
+} 
+
+
+
+
+
+
+
+/*vertical
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+li{
+    border: 1px solid red;
+    padding: 5px 20px;
+    background: url(../imagens/seta.png) no-repeat left;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+ul a{
+    color: black;
+    text-indent: 30px;
+    line-height: 40px;
+    text-decoration: none;
+    width: 200px;
+    height: 40px;
+    display: block;
+    background: orange url(../imagens/menu.png) no-repeat left;
+}
+ul a:hover{
+    background-position: right;
+    background-color: #f99200;
+    color: white;
+}
+#home #navegacao .home a,#sobre #navegacao .sobre a,
+#contato #navegacao .contato a,#servicos #navegacao .servicos a{
+    background-position: right;
+    background-color: orangered;
+    color: white;
+}*/

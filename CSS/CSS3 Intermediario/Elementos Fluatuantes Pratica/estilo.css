@@ -1,0 +1,56 @@
+#principal{
+    width: 920px;
+    border: 5px solid red;
+}
+.noticia{
+    background-color: greenyellow;
+    padding: 5px;
+    width: 280px;
+    margin: 7px;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+body{
+background: goldenrod;
+}
+.imagem-galeria{
+background-color: blue;
+padding: 5px;
+margin: 15px;
+float: left;
+width: 260px;
+color: darkorange;
+}
+
+
+/*
+body {
+    background: #f4f4f4;
+}
+
+#principal {
+    width: 920px;
+}
+
+.noticia {
+    background: #e5e5e5;
+    padding: 5px;
+    width: 280px;
+    margin: 7px;
+    float: left;
+}
+
+.imagem-galeria {
+    background: white;
+    width: 265px;
+    padding: 5px;
+    float: left;
+    margin: 15px;
+}
+
+.clear{
+    clear: both;
+}
+*/

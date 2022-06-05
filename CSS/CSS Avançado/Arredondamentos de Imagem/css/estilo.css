@@ -1,0 +1,30 @@
+/*.caixa{
+    width: 400px;
+    background: #dedede url('../imagens/topo2.png') no-repeat left top;
+}
+
+.caixa h2{
+    padding: 10px 20px 0px 20px;
+}
+.caixa p{
+    background: url('../imagens/baixo2.png') no-repeat left bottom;
+    padding: 0px 20px 20px 20px;
+} basicamente se usar o topo e baixo normal vc consegue fazer assim mas para
+o efeito de degrade teremos que usar outro metodo*/
+.caixa{
+    width: 400px;
+    background: #dedede url('../imagens/fundo-arredondamento.png') no-repeat left top;
+}
+.caixa h2{
+    padding: 10px 20px 0 20px;
+    background: #dedede url('../imagens/topo2.png') no-repeat left top;
+}
+.caixa p{
+    padding: 0 20px;
+    margin-bottom: 0px;
+}
+.caixa .ultimo{
+    background: #dedede url('../imagens/baixo2.png') no-repeat left bottom;
+    width: 400px;
+    height: 24px;
+}
