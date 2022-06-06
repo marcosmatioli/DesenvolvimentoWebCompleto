@@ -61,7 +61,6 @@ a{/*configuração padrão a*/
     margin: 20px auto;
     font-size: 0.8em;
     color: white;
-    
 }
 .caixa{
     background: #fff url('../imagens/fundo-caixa.png');
@@ -141,14 +140,16 @@ input#email{
     margin: 5px auto;
     float: left;
     padding: 20px;
+    
 }
 #conteudo-caixa.coluna-unica{
     background: white;
     color: black;
-    margin: 5px auto;
+    padding: 10px;
+    margin: 10px 0px 10px 80px;
     float: left;
-    border: 1px solid red;
     width: 80%;
+    border: 1px solid red;
 }
 #conteudo-caixa img{
     width: 95%;
@@ -162,22 +163,24 @@ input#email{
     margin: 10px auto;
     text-align: center;
     text-transform: uppercase;
+
 }
 #conteudo-caixa p{
     font-size: 1.2em;
     padding: 5px;
-    
+
 }
 #conteudo-caixa a{
     padding-left: 10px;
-    color: black;
+    color: red;
     font-size: 1.3em;
-    
+
 }
 #conteudo-caixa ul li p{
     color: #B10333;
     font-size: 0.8em;
     display: inline;
+
 }
 #conteudo-caixa ul li h1{
     text-transform: uppercase;
@@ -185,14 +188,16 @@ input#email{
     font-size: 0.9em;
     padding: 5px;
     display: inline;
-    
+
 }
 #conteudo-caixa ul li img{
     width: 25%;
     float: left;
+
 }
 #conteudo-caixa ul{
     margin: 5px;
+
 }
 #rodape{/*rodape*/
     background: #294C71;
