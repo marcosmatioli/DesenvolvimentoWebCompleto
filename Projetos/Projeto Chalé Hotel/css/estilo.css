@@ -11,7 +11,7 @@ a{
     text-decoration: none;
 }
 #container{
-    background: #ede9c6;
+    background: #ede9c6 url('../imagens/bg-container.png')top center repeat-y;
     margin: 0 auto;
     min-width: 740px;/*para não ficar muito pequeno*/
     max-width: 1180px; /*fiz menor pq meu monitor é ultrawide*/
@@ -54,7 +54,6 @@ a{
     margin-left: 90px;
     margin-right: 15px;
     padding-top: 15px;
-    
 }
 #menu-locais{
     border-bottom: 1px solid #b5ab56;
@@ -78,22 +77,77 @@ a.reserva{
 /*barra vertical+menu+depoimento*/
 #menu{
     margin-top: 15px;
-    
 }
 .depoimento{
-    position: absolute;
+    /*position: absolute;
     top: 70px;
-    left: 210px;
+    left: 210px; */
+    float: right;
+    width: 226px;
+    height: 164px;
 }
-ul#navegacao{
+#menu ul{
     float: left;
 }
-ul#navegacao a {
+#menu ul li a{
     text-transform: uppercase;
     font-size: 0.8em;
     padding: 5px;
     color: #6e672c;
+    line-height: 30px;
+}
+#menu a:hover{
+    background: #fdf6de;
+    border-radius: 5px;
 }
 ul{
     list-style-type: none;
+}
+/*area de conteudos - layout liquido*/
+#area-principal{
+    float: left;
+    width: 50%;
+    background: url('../imagens/bg-area-principal.png') top left repeat-x;
+    padding: 15px 0px;
+}
+#area-lateral{
+    float: right;
+    width: 50%;
+    background: url('../imagens/bg-area-lateral.png') top left repeat-x;
+    padding: 20px 0px;
+}
+.conteudo{
+    margin: 0 auto;
+    width: 90%;
+}
+/*formatações de texto*/
+h2{
+    color: #7d7640;
+    font-size: 1.1em;
+    padding: 5px 0px;
+}
+p{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+/*area lateral formatações*/
+#beneficios li{
+    padding: 8px;
+    border-bottom: 1px solid #f3efcb;
+    height: 6em;
+}
+#area-lateral li:hover{
+    background: #FFFFEC;
+}
+#area-lateral img{
+    padding: 10px;
+}
+/*links menu fim*/
+#rodape{
+    clear: both;
+    padding: 16px;
+    background: #fff url('../imagens/bg-rodape.png') repeat-x top;
+    color: #7d7d40;
+    font-size: 1em;
+    text-align: left;
 }
