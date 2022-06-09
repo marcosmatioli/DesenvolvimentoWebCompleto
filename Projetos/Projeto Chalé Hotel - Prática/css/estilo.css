@@ -134,13 +134,25 @@ p{
 #beneficios li{
     padding: 8px;
     border-bottom: 1px solid #f3efcb;
-    height: 6em;
+    height: 6em; /*97px*/
 }
-#area-lateral li:hover{
-    background: #FFFFEC;
+#beneficios li a img{
+    float: left;
+    margin-right: 8px;
 }
-#area-lateral img{
-    padding: 10px;
+#beneficios li a p{
+    color: #000;
+    font-size: 0.9em;
+}
+#beneficios li a h3{
+    font-size: 1.1em;
+    color: #615b2d;
+    padding: 5px 0px;
+    background: url('../imagens/ornamento.png') no-repeat center right;
+}
+#beneficios li:hover{
+    background: #f6f3d6;
+    cursor: pointer;
 }
 /*links menu fim*/
 #rodape{
