@@ -1,0 +1,36 @@
+*{
+    padding: 20px;
+    margin: 20px;
+    background: black;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+.fonte1{
+    font-family: 'fantasma';
+}
+.fonte2{
+    font-family: 'Ancião';
+}
+.fonte3{
+    font-family: 'Heart';
+}
+.fonte4{
+    font-family: 'Madelina';
+}
+@font-face {
+    font-family: "fantasma";
+    src: url('../fontes/iknowaghost.woff');
+}
+@font-face {
+    font-family: "Ancião";
+    src: url('../fontes/Ancient-Medium.woff');
+}
+@font-face {
+    font-family: "Heart";
+    src: url('../fontes/BringHeart.woff');
+}
+@font-face {
+    font-family: "Madelina";
+    src: url('../fontes/MadelinaScript.woff');
+}

@@ -40,6 +40,7 @@ h3{
     background-image: url('../imagens/imagem4.jpg');
 }
 /*-----------FIM PARALLAX------------*/
+/*-----para sempre ficar no centro------*/
 .conteudo-titulo{
     position: absolute;
     left: 0;
@@ -55,3 +56,4 @@ h3{
     font-size: 25px;
     letter-spacing: 5px;
 }
+/*fim para sempre ficar no meio*/
