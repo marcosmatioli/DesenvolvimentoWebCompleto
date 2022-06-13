@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#caixa{
+    width: 300px;
+    height: 300px;
+    background: url('../imagens/camera.png') no-repeat;
+ /*  background: linear-gradient(to right,yellow,orange,red);*/
+   /*to left ou to right, escolhe os dois gradients e faz o gradiente
+   80deg,90deg da para fazer uma rotação, pode fazer com várias cores*/
+   background: radial-gradient(green);
+}
+#caixa2{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to right,yellow,orange,red);
+   /*to left ou to right, escolhe os dois gradients e faz o gradiente
+   80deg,90deg da para fazer uma rotação, pode fazer com várias cores*/
+}
+#caixa3{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(green,yellow,brown);
+    /*de cima para baixo quantas cores quiser*/
+}
+#caixa4{
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(orange,yellow,red);
+    /*faz um circulo do meio para fora com as cores*/
+}
+#caixa h1{
+   background: rgb(255,255,255,0.5);
+   /*red green blue and opacity separando por virgula, colocando fundo na imagem
+   ou no texto da imagem*/
+    
+}
