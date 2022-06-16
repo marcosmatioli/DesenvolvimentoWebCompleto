@@ -1,1 +1,18 @@
-
+*{
+    padding: 0;
+    margin: 0;
+}
+#caixa{
+    width: 300px;
+    height: 300px;
+    background: orange;
+    margin: 0 auto;
+}
+#caixa:hover{
+    width: 400px;
+    height: 400px;
+    background: yellow;
+    /* transition: height 2s,width 2s,background 2s;
+    da para colocar várias coisas aqui que vc quer que vai indo aos poucos*/
+    transition: all 1s;
+}

@@ -32,7 +32,7 @@
     height: 300px;
     position: relative;
     background: red;
-    animation: carregando 10s 1s 2 alternate;
+    animation: carregando 1s 1s 5 alternate;
     /*name duration delay count direction*/
 
  /* animation-name: animacao-caixa;
