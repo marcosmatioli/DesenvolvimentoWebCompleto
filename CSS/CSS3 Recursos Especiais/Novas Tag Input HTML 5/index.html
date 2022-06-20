@@ -5,38 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/normalize.css"> 
-    [if lt IE 9]
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fontes/fontes.css">
+    <!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
-    [endif]
+    <![endif]-->
     <!--normalize bom para deixar padrão em todos os navegadores-->
-    <title>Novas TAG HTML 5</title>
+    <title>Novas tag input html 5</title>
     
 </head>
 <body>
-    
-    <header>
-        
-    </header>
+    <!--recursos bem NOVOS para entrar no html5 nos navegadores-->
+    <form action="">
+        <!--nome-->
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome"  autofocus required>
+        <br><br>
 
-    <nav>
-       
-    </nav>
+        <!--Email-->
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br><br>
 
-    <article> 
-        
-        <section>
-            
-        </section>
-        
-    </article>
+        <!--Numero-->
+        <label for="number">Numero:</label>
+        <input type="number" name="number" id="number" min="5" max="10" step="2">
+        <br><br>
 
-    <aside>
-        
-    </aside>
+        <!--URL-->
+        <label for="url">URL:</label>
+        <input type="url" name="url" id="url" placeholder="ex: https://www.site.com.br">
+        <br><br>
 
-    <footer>
-        
-    </footer>
+        <!--PESQUISA-->
+        <label for="pesquisa">Pesquisa</label>
+        <input type="search" name="pesquisa" id="pesquisa">
+        <br><br>
+
+        <!--RANGE-->
+        <label for="range">Range:</label>
+        <input type="range" name="range" id="range" min="1" max="3" value="2">
+        <br><br>
+
+        <!--Data-->
+        <label for="data">Pesquisa</label>
+        <input type="date" name="data" id="data">
+        <br><br>
+
+        <!--color-->
+        <label for="color">Cor</label>
+        <input type="color" name="color" id="color">
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+   
 </body>
 </html>
