@@ -1,0 +1,22 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    border: 1px solid red;
+    background: gray;
+    padding: 20px;
+    margin: 10px;
+}
+nav{
+    border: 2px solid blue;
+    background: yellow;
+    padding: 20px;
+    margin: 10px;
+}
+footer{
+    margin: 10px;
+    background-color: bisque;
+    color: black;
+    padding: 20px;
+}
