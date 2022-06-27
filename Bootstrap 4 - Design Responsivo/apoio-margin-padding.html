@@ -22,10 +22,13 @@
     mx -> Margin no eixo x (horizontal) esquerda/direita
     my -> Margin no eixo y (vertical) top/bottom
     m  -> Margin em todos os lados
-    Valor a definir (0 até 5)
+    Valor a definir (0 até 5) esse valor é uma unidade de medida do CSS chamada REM .
     -->
     <h1 class="bg-success">Margin</h1>
-    <p class="bg-success">Conteúdo principal</p>
+    <p class="bg-success mt-4 mb-3 ml-4 mr-3">Conteúdo principal</p> <!--aplica em todos os lados-->
+    <p class="bg-success m-3">Conteúdo principal</p> <!--todos os lados o margin-->
+    <p class="bg-success mx-4">Conteúdo principal</p> <!--aplica no eixo X como diz ali-->
+    <p class="bg-success my-5">Conteúdo principal</p> <!--aplica no exio Y-->
     <h1 class="bg-success">Margin</h1>
 
     <br>
@@ -42,8 +45,12 @@
     Valor a definir (0 até 5)
     -->
     <h1 class="bg-success">Padding</h1>
-    <p class="bg-success">Conteúdo principal</p>
-    <h1 class="bg-success">Padding</h1>
+    <p class="bg-success pt-3 pb-4 pl-3 pr-2">Conteúdo principal</p>
+    <p class="bg-success pb-4 mb-5">Conteúdo principal</p>
+    <p class="bg-success px-5 d-inline">Conteúdo principal</p>
+    <p class="bg-success py-4 d-inline">Conteúdo principal</p>
+    <p class="bg-success p-4 d-inline">Conteúdo principal</p>
+    <h1 class="bg-success mt-5 p-5 d-inline-block">Padding</h1>
 
     <br>
     <br>
