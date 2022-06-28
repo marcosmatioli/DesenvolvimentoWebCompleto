@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <style type="text/css">
+      
         /*isso são breakpoints que mudam o site por completo*/
         /*Small devices (landscape phones)*/
         @media (min-width: 576px) {
@@ -46,46 +47,90 @@
 
         /**************************/
         /* Extra small devices (portraint phones) */
-        @media () {}
+        @media (max-width:575px) {
+          body{
+            background: #870000;
+          }
+          
+        }
 
         /* Small devices (Landscape Phones) */
-        @media () {}
+        @media (max-width: 767px) {
+          body{
+            background: #870000;
+          }
+        }
 
         /* Medium devices (Tablets) */
-        @media () {}
+        @media (max-width: 991px) {
+          body{
+            background: #870000;
+          }
+        }
 
         /* Large devices (Desktops) */
-        @media () {}
-
+        @media (max-width:991px) {
+          body{
+            background: #870000;
+          }
+        }
+        
 
 
         /******************************************/
-        /*Extra small devices (portrait phones, menor que 576px)*/
-        @media () {}
+        /* Extra small devices (portrait phones, less than 576px)*/
+        @media (max-width: 575.98px) {
+          body{
+            background: #870000;
+          }
+        }
 
-        /*Small devices (landscape phones, 576px e maiores)*/
-        @media () and () {}
+        /* Small devices (landscape phones, 576px and up)*/
+        @media (min-width: 576px) and (max-width: 767.98px) {
+          body{
+            background: blue;
+          }
+          }
 
-        /*Medium devices (tablets, 768px e maiores)*/
-        @media () and () {}
+        /* Medium devices (tablets, 768px and up)*/
+        @media (min-width: 768px) and (max-width: 991.98px) {
+          body{
+            background: red;
+          }
+          }
 
-        /*Large devices (desktops, 992px e maiores)*/
-        @media () and () {}
+        /* Large devices (desktops, 992px and up)*/
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+          body{
+            background: green;
+          }
+         }
 
-        /*Extra large devices (large desktops, 1200px  e maiores)*/
-        @media () {}
+        /* Extra large devices (large desktops, 1200px and up)*/
+        @media (min-width: 1200px) { 
+          body{
+            background: yellow;
+          }
+         }
         
         .circulo{
-          width: 220px;
-          height: 220px;
-          margin: 120px auto;
+          width: 200px;
+          height: 200px;
+          margin: 0px auto;
           padding: 50px;
           background: var(--indigo);
           border: 10px solid var(--dark);
-          border-radius: 300px;
+          border-radius: 200px;
           font-size: 1.2em;
           text-align: center;
           text-transform: uppercase;
+        }
+        .quadrado{
+          width: 250px;
+          height: 250px;
+          background: var(--info);
+          margin: 100px auto;
+          padding: 25px;
         }
         
     </style>
@@ -97,9 +142,10 @@
     <div class="w-25 border border-success rounded-circle bg-white mx-auto mt-5 p-3">
       Lorem Ipslom Dolor sit amet 
     </div>
-
-    <div class="circulo">
-      Brincando
+    <div class="quadrado">
+      <div class="circulo">
+        
+      </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

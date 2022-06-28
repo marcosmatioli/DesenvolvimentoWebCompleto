@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - botões</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  </head>
+
+  <body style="padding-bottom: 200px; width: 600px; margin: 0 auto; border: 1px solid gray;">
+
+    <!-- Botoes 
+    formatação padrao: btn
+    formatação específicas:
+    btn-primary, btn-secondary, btn-success, btn-info,
+    btn-warning, btn-danger, btn-light, btn-dark, btn-link
+    -->
+    <h3>Botões</h3>
+    <button class="btn-secondary" type="button">Clique</button>
+    <button class="btn-primary" type="button">Clique</button>
+    <button class="btn-warning" type="button">Clique</button>
+    <button class="btn-danger" type="button">Clique</button>
+    <button class="btn-dark" type="button">Clique</button>
+    <button class="btn-link" type="button">Clique</button>
+    <button class="btn-info" type="button">Clique</button>
+    <button class="btn-success" type="button">Clique</button>
+
+    <h3>Botões com diferentes tags</h3>
+    <a class="btn btn-danger" href="#">Link</a> <!--tem que aplicar o btn e dps btn+bg-->
+    <a class="btn btn-dark" href="#">Link</a>
+    <button class="btn btn-info" type="submit">Submit</button>
+    <input class="btn btn-danger" type="button" value="Button">
+    <input class="btn btn-light" type="submit" value="Input Submit">
+    <input class="btn btn-dark" type="reset" value="Reset">
+
+    <!-- Botoes com contorno
+    btn-outline-<formato> ele faz o botão ficar na cor quando vc passar o mouser por cima dele
+    -->
+    <h3>Botões com contorno</h3>
+    <button class="btn btn-outline-dark" type="button">Clique</button>
+    <button class="btn btn-outline-danger" type="button">Clique</button>
+    <button class="btn btn-outline-info" type="button">Clique</button> <!--o background que ficar dark-->
+
+    <!-- Tamanhos de botões
+    opções: btn-lg, btn-sm, btn-block
+    -->
+    <h3>Tamanhos dos botões</h3>
+    <button class="btn btn-outline-dark btn-lg" type="button">Grande</button>
+    <button class="btn btn-outline-danger" type="button">Normal</button>
+    <button class="btn btn-sm btn-outline-info" type="button">Pequeno</button>
+    <br><br>
+    <button class="btn btn-block btn-outline-danger" type="button">Bloco</button>
+
+    <!-- Estados dos botões
+    opções: active, disabled - botão ativo, desativo e botão que não pode ser apertado
+    -->
+    <h3>Estados de botões</h3>
+    <button class="btn btn-outline-danger" type="button">Normal</button>
+    <button class="btn btn-outline-dark active" type="button">Ativo</button>
+    <button class="btn btn-outline-dark disabled" type="button">Inativo</button>
+    <br><br>
+    <button class="btn btn-success" type="button" data-toggle="button">Alternar</button> <!--data-toggle="button" muda de normal para ativo-->
+
+    <h3>Grupos de botões - horizontal</h3>
+    <div class="btn-group"> <!--btn-group ele faz a mescla dos botões para ter 
+        uma melhor visão ou seja ele arredonda as bordas e o centro ele deixa reto-->
+        <button class="btn btn-outline-info" type="button">Esquerda</button>
+        <button class="btn btn-outline-dark" type="button">Centro</button>
+        <button class="btn btn-outline-warning" type="button">Centro</button>
+        <button class="btn btn-outline-danger" type="button">Direita</button>
+    </div>
+    
+    <h3>Grupos de botões - vertical</h3>
+    <div class="btn-group-vertical"> <!--vertical button para fazer na vertical-->
+        <button class="btn btn-outline-success" type="button">Topo</button>
+        <button class="btn btn-outline-warning" type="button">Meio</button>
+        <button class="btn btn-outline-danger" type="button">Fundo</button>
+    </div>
+    <br><br>
+
+    <h3>Toolbar de botões</h3>
+    <div class="btn-toolbar"> <!--ele junta ambos os grupos mas fica com a bordinha também-->
+        <div class="btn-group">
+           <button class="btn btn-outline-success" type="button">1</button>
+           <button class="btn btn-outline-warning" type="button">2</button>
+           <button class="btn btn-outline-danger" type="button">3</button>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-outline-dark" type="button">4</button>
+            <button class="btn btn-outline-dark" type="button">5</button>
+        </div>
+    </div>
+
+    <h3>Botões dropdown</h3> <!---->
+    <div class="dropdown">
+        <button class="btn btn-dark dropdown-toggle" data-toggle="dropdown" type="button"> <!--tem que colocar a classe dropdown-toggle e depois colocar o atributo 
+            data-toggle="dropdown" e depois na div tem que colocar dropdown-menu e nos itens da div colocar dropdown-item e então estará configurado a lista -->
+            Clique
+        </button>
+        <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Link 1</a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">Link 2</a>
+            <div class="dropdown-divider"></div> <!--não pode ser colocado na classe do link direto-->
+            <a href="#" class="dropdown-item">Link 3</a>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
