@@ -16,29 +16,29 @@
   <body style="margin-bottom: 200px;padding: 16px;">
 
     <!-- Listas -->
-    <ul>
-        <li>Meu item de lista 1</li>
-        <li>Meu item de lista 2</li>
-        <li>Meu item de lista 3</li>
-        <li>Meu item de lista 4</li>
+    <ul class="list-group w-25">
+        <li class="list-group-item">Meu item de lista 1</li>
+        <li class="list-group-item active">Meu item de lista 2</li>
+        <li class="list-group-item">Meu item de lista 3</li>
+        <li class="list-group-item">Meu item de lista 4</li>
     </ul>
     <br><br>
 
     <!-- Listas com classe flush -->
-    <ul>
-        <li>Meu item de lista 1</li>
-        <li>Meu item de lista 2</li>
-        <li>Meu item de lista 3</li>
-        <li>Meu item de lista 4</li>
+    <ul class="list-group-flush w-25"> <!--flush ele tira as bordas do canto-->
+        <li class="list-group-item">Meu item de lista 1</li>
+        <li class="list-group-item active">Meu item de lista 2</li>
+        <li class="list-group-item">Meu item de lista 3</li>
+        <li class="list-group-item">Meu item de lista 4</li>
     </ul>
     <br><br>
 
     <!-- Listas com links -->
-    <ul>
-        <a href="#">Meu item de lista 1</a>
-        <a href="#">Meu item de lista 2</a>
-        <a href="#">Meu item de lista 3</a>
-        <a href="#">Meu item de lista 4</a>
+    <ul class="list-group w-50 m-auto">
+        <a class="list-group-item" href="#">Meu item de lista 1</a>
+        <a class="list-group-item active" href="#">Meu item de lista 2</a>
+        <a class="list-group-item" href="#">Meu item de lista 3</a>
+        <a class="list-group-item" href="#">Meu item de lista 4</a>
     </ul>
     <br><br>
 
@@ -47,16 +47,16 @@
         opções: primary, secondary, success, info,
                 warning, danger, light, dark
     -->
-    <ul>
-        <li>Lista normal</li>
-        <li>Lista primary</li>
-        <li>Lista secondary</li>
-        <li>Lista success</li>
-        <li>Lista info</li>
-        <li>Lista warning</li>
-        <li>Lista danger</li>
-        <li>Lista light</li>
-        <li>Lista dark</li>
+    <ul class="list-group">
+        <li class="list-group-item">Lista normal</li>
+        <li class="list-group-item-primary list-group-item">Lista primary</li>
+        <li class="list-group-item-secondary list-group-item">Lista secondary</li>
+        <li class="list-group-item-success list-group-item">Lista success</li>
+        <li class="list-group-item-info list-group-item">Lista info</li>
+        <li class="list-group-item-warning list-group-item">Lista warning</li>
+        <li class="list-group-item-danger list-group-item">Lista danger</li>
+        <li class="list-group-item-light list-group-item">Lista light</li>
+        <li class="list-group-item-dark list-group-item">Lista dark</li>
     </ul>
     <br><br>
 
@@ -65,34 +65,45 @@
         opções: primary, secondary, success, info,
                 warning, danger, light, dark
     -->
-    <ul>
-        <li>Meu item de lista 1</li>
-        <li>Meu item de lista 2</li>
-        <li>Meu item de lista 3</li>
-        <li>Meu item de lista 4</li>
+    <ul class="list-group">
+        <li class="list-group-item">
+            Caixa de Entrada
+            <span class="badge badge-success">69</span>
+        </li>
+
+        <li class="list-group-item">
+            Caixa de Enviados
+            <span class="badge badge-success">22</span>
+        </li>
+
+        <li class="list-group-item">
+            Caixa de Lixeira
+            <span class="badge badge-danger">18</span>
+        </li>
+        <li class="list-group-item">Meu item de lista 4</li>
     </ul>
     <br><br>
 
-    <!-- Breadcrumb -->
-    <ol>
-        <li>Home</li>
+    <!-- Breadcrumb - Migalhas - Lista Ordenada OL -->
+    <ol class="breadcrumb">
+        <li class="breadcrump-item">Home</li>
     </ol>
 
-    <ol>
-        <li>
+    <ol class="breadcrumb">
+        <li class="breadcrump-item">
             <a href="">Home</a>
         </li>
-        <li>Notícias</li>
+        <li class="breadcrumb-item">Notícias</li>
     </ol>
 
-    <ol>
-        <li>
+    <ol class="breadcrumb">
+        <li class="breadcrump-item">
             <a href="#">Home</a>
         </li>
-        <li>
+        <li class="breawdcrump-item">
             <a href="#">Usuários</a>
         </li>
-        <li>Jamilton Damasceno</li>
+        <li class="breawdcrump-item">Marcos Matioli</li>
     </ol>
     <br><br>
 
