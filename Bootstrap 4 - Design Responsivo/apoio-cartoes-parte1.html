@@ -14,36 +14,37 @@
   </head>
 
   <body style="margin-bottom: 200px;padding: 16px;">
-    
+    <!--tudo do bootstrap é adaptativo então -->
     <h3 class="border-bottom">Cartão simples</h3>
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Título do cartão</h4>
-        <h6 class="card-subtitle">Subtítulo do cartão</h6>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
-        <a class="btn btn-outline-primary" href="">Leia mais</a>
+    <div class="card"> <!--class card ele ja fica com uma borda com todo o texto dentro e um arredondamento-->
+      <div class="card-body"> <!--corpo do cartão, ele aplica espaçamento e tals dentro-->
+        <h4 class="card-title">Título do cartão</h4> <!--card title para o titulo-->
+        <h6 class="card-subtitle">Subtítulo do cartão</h6> <!--card subtitle-->
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, <!--card text para o texto do cartão-->
+          feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a class="btn btn-outline-dark" href="">Leia mais</a>
       </div>
     </div>
 
     <br><br>
 
     <h3 class="border-bottom">Cartão com imagem</h3>
-    <div class="card">
-      <div class="card-body">
+    <div class="card"> <!--card para inicia a card inteira-->
+      <img class="card-img-top" src="https://source.unsplash.com/random/600x200"> <!--pega imagens aleatoria--> <!--card img top/bottom define o arredondamento das bordas com base na onde vc colcoar ela-->
+      <div class="card-body"> <!--card body e dale dale-->
         <h4 class="card-title">Título do cartão</h4>
         <h6 class="card-subtitle">Subtítulo do cartão</h6>
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
         <a class="btn btn-outline-primary" href="">Leia mais</a>
       </div>
-      <img class="card-img-bottom" src="https://source.unsplash.com/random/600x200">
     </div>
 
     <br><br>
 
     <h3 class="border-bottom">Cartão com imagem sobreposta</h3>
     <div class="card text-white">
-      <img class="card-img" src="https://source.unsplash.com/random/600x250">
-      <div class="card-img-overlay">
+      <img class="card-img" src="https://source.unsplash.com/random/600x250"> <!--aqui vc tem que tirar o bottom ou top do card img-->
+      <div class="card-img-overlay"> <!--basicamente para fazer o card ficar com a img que a gente colocou na parte de cima-->
         <h4 class="card-title">Título do cartão</h4>
         <h6 class="card-subtitle">Subtítulo do cartão</h6>
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
@@ -55,8 +56,8 @@
 
     <h3 class="border-bottom">Cartão com cabeçalho</h3>
     <div class="card">
-      <div class="card-header">
-        Cabeçalho do cartão
+      <div class="card-header"> <!--tipo um cabeçalho mesmo que fica antes do titulo então é antes e tem uma bordinha escurinha-->
+        Cabeçalho do cartão 
       </div>
       <div class="card-body">
         <h4 class="card-title">Título do cartão</h4>
@@ -68,9 +69,9 @@
 
     <br><br>
 
-    <h3 class="border-bottom">Cartão com cabeçalho e rodapé / Alinhamento</h3>
+    <h3 class="border-bottom">Cartão com cabeçalho e rodapé / Alinhamento</h3> <!--text-center,text-right,text-left para alinhar o troço inteiro-->
     <div class="card text-right">
-      <div class="card-header">
+      <div class="card-header"> <!--card header é o bangue que fica na parte de cima fixo-->
         Cabeçalho do cartão
       </div>
       <div class="card-body">
@@ -79,7 +80,7 @@
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
         <a class="btn btn-outline-danger" href="">Leia mais</a>
       </div>
-      <div class="card-footer">
+      <div class="card-footer"> <!--card footer é um rodapezinho que fica na parte de baixo-->
         Rodapé do cartão
       </div>
     </div>
@@ -89,9 +90,9 @@
     <h3 class="border-bottom">Cartão com navegação</h3>
     <div class="card">
       <div class="card-header">
-        <ul class="nav nav-tabs card-header-tabs">
+        <ul class="nav nav-tabs card-header-tabs"> <!--nav nav tabs card header tabs, para fazer o topo-->
           <li class="nav-item">
-            <a class="nav-link active" href="">Link 1</a>
+            <a class="nav-link active" href="">Link 1</a> <!--lembrando que isso aqui é um nav bar sempre tem que usar nav, nav tabs nav-item e nav-link no link do troço para aplicar as configs-->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">Link 2</a>
@@ -105,7 +106,7 @@
         <h4>Título do cartão</h4>
         <h6>Subtítulo do cartão</h6>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
-        <a class="btn btn-outline-danger btn-block" href="">Leia mais</a>
+        <a class="btn btn-outline-danger btn-block" href="">Leia mais</a> <!--btn block= usa todo o espaçamento-->
       </div>
     </div>
 
@@ -125,7 +126,7 @@
     </div>
 
     <div class="card bg-danger text-white mb-2">
-      <div class="card-header">
+      <div class="card-header bg-success">
         Cabeçalho do cartão
       </div>
       <div class="card-body">
@@ -151,7 +152,7 @@
     <br><br>
 
     <h3 class="border-bottom">Cartão com colunas</h3>
-    <div class="card-columns">
+    <div class="card-columns"> <!--uma div que vai fazer a coluna inteira dos cartões então para começar tem que começar com esse aqui -->
       
       <!-- inicio cartao -->
       <div class="card text-white">
