@@ -17,15 +17,34 @@
 
     
     <h2>Alertas</h2>
-    <div>
-      <strong>Primary</strong> você tem uma postagem pendente!
+    <div class="alert alert-primary"> <!--aplica um espaçamento-->
+      <strong>Primary</strong> você tem uma alerta!
     </div>
+    <div class="alert alert-secondary"> <!--aplica um espaçamento e depois a cor-->
+      <strong>Secondary</strong> você tem uma alerta!
+    </div>
+    <div class="alert alert-warning"> <!--aplica um espaçamento-->
+      <strong>Warning</strong> você tem uma alerta!
+    </div>
+    <div class="alert alert-success"> <!--aplica um espaçamento-->
+      <strong>Success</strong> você tem uma alerta!
+    </div>
+    <div class="alert alert-info"> <!--aplica um espaçamento-->
+      <strong>Info</strong> você tem uma alerta!
+    </div>
+    <div class="alert alert-danger"> <!--aplica um espaçamento-->
+      <strong>Danger</strong> você tem uma alerta!
+    </div>
+    <div class="alert alert-dark"> <!--aplica um espaçamento-->
+      <strong>Dark</strong> você tem uma alerta!
+    </div>
+    <!--tem as outras que a gente conhece-->
 
 
     <h2>Alerta com botão fechar</h2>
-    <div>
-      <button type="button">
-        &times;
+    <div class="alert alert-success alert-dismissible">
+      <button class="close"type="button" data-dismiss="alert"> <!--para fechar os alertas tem que colocar isso aqui e o bagulho de cima-->
+        &times; <!--botão X para fechar-->
       </button>
       <strong>Fechar</strong> Alerta com botão fechar
     </div>
@@ -33,11 +52,11 @@
     
 
     <h2>Alerta com mais conteúdos</h2>
-    <div>
+    <div class="alert alert-dark">
       
       <h4>Título</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a metus in purus malesuada vulputate. Sed lacinia quam massa, eu consectetur tortor faucibus sed.</p>
-      <hr>
+      <hr> <!--uma linha-->
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a metus in purus malesuada vulputate. Sed lacinia quam massa, eu consectetur tortor faucibus sed.</p>
 
     </div>
@@ -45,22 +64,45 @@
 
 
     <h2>Barra de progresso</h2>
-    <div>
-      <div></div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 39%"></div> <!--o progresso é com base na width pode ser com style ou bootstrap-->
+    </div>
+    <br>
+    <div class="progress">
+      <div class="progress-bar bg-success" style="width: 75%"></div> <!--tem como mudar o bg com a bg-success ou danger, warning e tals-->>
     </div>
     <br>
 
     <h2>Altura</h2>
-    
+    <div class="progress" style="height: 20px;"> <!--a altura da barra é aqui vc define com o height e escolhe a grossura da barra-->
+      <div class="progress-bar bg-success" style="width: 15%;"></div>
+    </div>
+    <br>
+    <div class="progress" style="height: 10px;"> <!--a altura da barra é aqui vc define com o height e escolhe a grossura da barra-->
+      <div class="progress-bar bg-success" style="width: 99%;"></div>
+    </div>
+    <br>
 
     <h2>Listrado</h2>
-    
+    <div class="progress" style="height: 10px;">
+      <div class="progress-bar progress-bar-striped bg-success" style="width: 89%;"></div> <!--striped é uma barra de progresso listrada-->
+    </div>
 
     <h2>Animado</h2>
-    
+    <div class="progress" style="height: 10px;">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 89%;"></div> <!--basicamente adiciona animated e pronto-->
+    </div>
 
     <h2>Múltiplas barras</h2>
-    
+
+    <div class="progress"> <!--várias barras dentro de uma barra carregando-->
+      <div class="progress-bar bg-warning" style="width: 20%;">20%</div>
+      <div class="progress-bar bg-info" style="width: 20%;">40%</div>
+      <div class="progress-bar bg-danger" style="width: 20%;">60%</div>
+      <div class="progress-bar bg-success" style="width: 20%;">80%</div>
+      <div class="progress-bar bg-dark" style="width: 20%;">100%</div>
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
