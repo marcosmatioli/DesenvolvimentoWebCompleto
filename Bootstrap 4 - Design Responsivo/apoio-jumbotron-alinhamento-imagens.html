@@ -17,22 +17,25 @@
 
     
     <h3 class="border-bottom">Jumbotron</h3>
-    <div class="jumbotron">
-        <div class="container">
+    <div class="jumbotron"> <!--cria a area de destaque um negoção com coisa cinza de fundo, da pra usar umt ext-right-->
+        <div class="container"> <!--pra que usar o container? ele se ajusta e fica dentro do container ele da tipo um margin 0 auto-->
           <h1 class="display-4">Música para todos.</h1>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl.
+             Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+           <!--coloca uma linha mas poderia ter usado um border bottom aqui-->
           <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a class="btn btn-primary btn-lg" href="">Leia mais</a>
+          <a class="btn btn-outline-primary btn-lg" href="">Leia mais</a> <!--usar um botão lg-->
         </div>
     </div>
 
     <h3 class="border-bottom">Estrutura para imagens</h3>
-    <div class="media">
-      <img class="mr-3" src="https://source.unsplash.com/random/60x60">
-      <div class="media-body">
-        <h5>Título do conteúdo</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+    <div class="media"> <!--classe midia? ele coiloca a imagem no canto esquerdo-->
+      <img class="mr-3" src="https://source.unsplash.com/random/60x60"> <!--colocouj uma margem na imagem-->
+      <div class="media-body"> <!--é tudo que vai ser do lado da media, então tem que colocar isso daqui para identificar que o que vier depois é parte disso-->
+        <h5>Título do conteúdo</h5> <!--titulo de conteudo normalmente depois do body da media, então é o conteudo-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl.
+           Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
       </div>
     </div>
 
@@ -40,20 +43,23 @@
 
     <h3 class="border-bottom">Alinhamentos: align-self-ALINHAMENTO (start, center, end) </h3>
     <div class="media">
-      <img class="mr-3 align-self-center" src="https://source.unsplash.com/random/60x60">
-      <div class="media-body">
+      <img class="mr-3 align-self-center" src="https://source.unsplash.com/random/60x60"> <!--align self center, right ou end para alinhar a imagem com o cantinho do texto,
+      quase impercetivel tem que tomar cuidado com as margens de paragrafos pq elas podem dar uma diferença-->
+      <div class="media-body"> <!--podemos usar um border para poder ver esse efeito melhor-->
         <h5>Título do conteúdo</h5>
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl.
+           Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
       </div>
     </div>
 
 
     <h3 class="border-bottom">Listas com imagens</h3>
-    <ul class="list-unstyled">
+    <ul class="list-unstyled"> <!--list unstyled(ele tira os etilos da lista), para criar lista com imagem,
+       sempre tem que usar o media para aplicar as formatações para ficar daora a estrutura-->
       
-      <li class="media border-bottom pb-2">
-        <img class="mr-2 align-self-center" src="https://source.unsplash.com/random/60x60">
-        <div class="media-body">
+      <li class="media border-bottom pb-2"> <!--padding bottom -2 , media para aplicar formatações e border bottom mas poderia ser um HR também-->
+        <img class="mr-2 align-self-center" src="https://source.unsplash.com/random/60x60"> <!--espaçamento entre a direita com mr-2 e alinhamento no centro com relação ao paragrafo da direita-->
+        <div class="media-body"> <!--novamente o media-body para aplicar as formatações do media e identificar o que é isso -->
           <h5>Título do conteúdo</h5>
           <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl.</p>
         </div>
