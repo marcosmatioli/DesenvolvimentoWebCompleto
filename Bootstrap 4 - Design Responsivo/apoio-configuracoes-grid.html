@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - Configurações do grid</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style type="text/css">
+
+      .marcador{
+        background: #fe9d9d;
+        border: 1px solid #f94646;
+      }
+      .marcador-container{
+        background: #5bf946;
+        border: 1px solid #36ae26;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container marcador-container"> <!--container / e  tem também o container-fluid "que ocupa todo o espaçamento disponivel do lugar"-->
+      
+      <h2>Largura fixa</h2>
+      <div class="row"><!--grid sempre dentro da row que se aplica-->
+        <!--col faz uma largura fixa e não vai ficar empilhado se diminuir-->
+        <div class="marcador col">Area 1</div>
+        <div class="marcador col">Area 2</div>
+        <div class="marcador col">Area 3</div>
+        <div class="marcador col">Area 4</div>
+      </div>
+
+      <h2>Largura automática (auto-layout)</h2>
+
+      <div class="row"><!--grid sempre dentro da row que se aplica-->
+        <!--lembrando que é sempre da row, e o tamanho do grid sempre vai ser 12 DOZE-->
+        <div class="marcador col-4">Area 1</div>
+        <div class="marcador col-6">Area 2</div>
+        <div class="marcador col">Area 3</div>
+        <div class="marcador col">Area 4</div>
+      </div>
+
+      <h2>Largura igual empilhada</h2>
+      <!--quando for SM ele vai ficar responsivo-->
+      <div class="row">
+        
+        <div class="marcador col-sm">Area 1</div> 
+        <div class="marcador col-md">Area 2</div>
+        <div class="marcador col-lg">Area 3</div>
+        <div class="marcador col-xl">Area 4</div>
+      </div>
+      <h2>Ordenando</h2>
+      <div class="row">
+        <!--usando o order a gente consegue deixar na ordem que quiser então não precisa se preocupar com a criação de conteudo-->
+        <div class="marcador col-md-3 order-2">Area 1</div> 
+        <div class="marcador col-md-3 order-1">Area 2</div>
+        <div class="marcador col-md-3 order-4">Area 3</div>
+        <div class="marcador col-md-3 order-3">Area 4</div>
+      </div>
+      <h2>offset</h2>
+      <div class="row">
+        <!--tipo um login não quer que fique usando todo a linha do negocio
+        /// basicamente o offset ele ocupa a coluna e vai 1 pouco para a direita-->
+        <div class="marcador col-md-6 offset-md-1">Login...</div> 
+      </div>
+      <h2>offset múltiplos alinhamentos</h2>
+      <div class="row">
+        <!--ele vai para a direita sempre para a direita que o conteudo vai-->
+        <div class="marcador col-md-3 offset-md-3">Area 1</div> 
+        <div class="marcador col-md-3 offset-md-3">Area 2</div>
+
+        <div class="marcador col-md-3">Area 1</div> 
+        <div class="marcador col-md-3 offset-md-6">Area 2</div> 
+      </div>
+      <h2>Aninhamento</h2>
+       <!--Classe ROW que difine -->
+      <div class="row">
+        <div class="col-md-6" style="border: 1px solid blue;"> col-md-6
+          <div class="row">
+            <div class="col-md-9 marcador">Conteudo 1</div>
+            <div class="col-md-3 marcador">Conteudo 2</div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--CSS/Normalize/Fonts-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fontes/fontes.css">
+
+    <!--HTML5Shiv-->
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Iconic CSS -->
+    <link href="iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+<style type="text/css">
+  .marcador{
+    background: #fe9d9d;
+    border: 1px solid #f94646;
+  }
+  .marcador-container{
+    background: #5bf946;
+    border: 1px solid #36ae26;
+  }
+
+</style>
+
+    <title>Apoio - Grid</title>
+  </head>
+  <body>
+
+    <!--Conteudo Principal-->
+      <div class="container marcador-container"> <!--o container ativa os breakpoints que são sm md lg e xl-->
+        
+        <div class="row"> <!--basicamente vc pode colocar as colunas e ela vai se adaptando com o tamanho da tela e vc pode escolher tamanho entre
+        sm md lg xl, então será que pode fazer o grid do grid-->
+          <div class="marcador col-6">Area 1</div>
+          <div class="marcador col-6">Area 2</div>
+        </div>
+        <div class="row"> 
+          <div class="marcador col-2 col-sm-6 bg-primary">Area 1</div>
+          <div class="marcador col-10 col-sm-6 bg-primary">Area 2</div>
+        </div>
+        <div class="row"> 
+          <div class="marcador col-1 col-md-6 bg-success">Area 1</div>
+          <div class="marcador col-11 col-md-6 bg-success">Area 2</div>
+        </div>
+        <div class="row"> 
+          <div class="marcador col-3 col-lg-6 bg-secondary">Area 1</div>
+          <div class="marcador col-9 col-lg-6 bg-secondary">Area 2</div>
+        </div>
+        <div class="row"> 
+          <div class="marcador col-4 col-xl-6 bg-warning">Area 1</div>
+          <div class="marcador col-8 col-xl-6 bg-warning">Area 2</div>
+        </div>
+        <br><br>
+        <div class="row"> 
+          <!--taporra menor o tanto de codigo para fazer a coluna doida, podemos fazer várias coisas na mesma div enche de bootstrap doido-->
+            <div class="marcador col-9 col-sm-8 col-md-5 col-lg-7 col-xl-6 bg-secondary">Area 1</div>
+            <div class="marcador col-3 col-sm-4 col-md-7 col-lg-5 col-xl-6 bg-secondary">Area 2</div>
+         
+        </div>
+        <br><br><br>
+        <div class="row">
+          <div class="marcador col-md-6">
+            <h2>Copmeço de tudo para começar um texto</h2>
+            <p>Texto para poder usar o contexto e usar o contexto contra ele mesmo para poder fazer um texto com sentido e digitar algo para poder usar
+              e fazer uma demonstração de como fica o grid no site juntamente com as formatações.
+            </p>
+            <a href="" class="btn btn-outline-dark oi oi-bolt btn-lg m-2"></a>
+          </div>
+          <div class="marcador col-md-6"> <!--então basicamente quando vc completa uma linha o proximo item vai para a proxima linha mas a gente pode
+          fazer outra linha antes que isso aconteça-->
+            <h2>Copmeço de tudo para começar um texto</h2>
+            <p>Texto para poder usar o contexto e usar o contexto contra ele mesmo para poder fazer um texto com sentido e digitar algo para poder usar
+              e fazer uma demonstração de como fica o grid no site juntamente com as formatações.
+            </p>
+            <a href="" class="btn btn-outline-dark oi oi-bolt btn-lg m-2"></a>
+          </div>
+          <div class="marcador col-md-4">
+            <h2>Copmeço de tudo para começar um texto</h2>
+            <p>Texto para poder usar o contexto e usar o contexto contra ele mesmo para poder fazer um texto com sentido e digitar algo para poder usar
+              e fazer uma demonstração de como fica o grid no site juntamente com as formatações.
+            </p>
+            <a href="" class="btn btn-outline-dark oi oi-bolt btn-lg m-2"></a>
+          </div>
+          <div class="marcador col-md-4">
+            <h2>Copmeço de tudo para começar um texto</h2>
+            <p>Texto para poder usar o contexto e usar o contexto contra ele mesmo para poder fazer um texto com sentido e digitar algo para poder usar
+              e fazer uma demonstração de como fica o grid no site juntamente com as formatações.
+            </p>
+            <a href="" class="btn btn-outline-dark oi oi-bolt btn-lg m-2"></a>
+          </div>
+          <div class="marcador col-md-4">
+            <h2>Copmeço de tudo para começar um texto</h2>
+            <p>Texto para poder usar o contexto e usar o contexto contra ele mesmo para poder fazer um texto com sentido e digitar algo para poder usar
+              e fazer uma demonstração de como fica o grid no site juntamente com as formatações.
+            </p>
+            <a href="" class="btn btn-outline-dark oi oi-bolt btn-lg m-2"></a>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
