@@ -30,7 +30,8 @@
     <div class="container">
 
       <h2>Flex container e flex itens (d-flex, flex-row, flex-column, flex-row-reverse)</h2>
-      <div class="caixa">
+      <div class="caixa d-flex flex-column"> <!--vc aplica na adiv que esta os conteudos dentro (d-flex = sempre aplica ele) - (flex-column = fica em linhas 1 embaixo do outro
+        e o row ele fica em colunas um do lado do outro) o row reverse ele começa da direita pra esquerda então fica 321 as caixa-->
         <div class="item">Flex item 1</div>
         <div class="item">Flex item 2</div>
         <div class="item">Flex item 3</div>
@@ -38,7 +39,7 @@
       <br><br>
 
       <h2>Alinhamento horizontal: justify-content-ALINHAMENTO (start, center, end, around e between)</h2>
-      <div class="caixa">
+      <div class="caixa d-flex justify-content-around"> <!--basicamente a mesma coisa do grid, pq ainda é grid então ele aplica as mesmas formatações, o around-->
         <div class="item">Flex item 1</div>
         <div class="item">Flex item 2</div>
         <div class="item">Flex item 3</div>
@@ -46,7 +47,7 @@
       <br><br>
 
       <h2>Colunas (d-flex, flex-column, flex-column-reverse)</h2>
-      <div class="caixa">
+      <div class="caixa d-flex flex-column-reverse"> <!--basicamente flex-column é o padrão começa de cima para baixo 123 - e o reverse ele começa de baixo para cima-->
         <div class="item">Flex item 1</div>
         <div class="item">Flex item 2</div>
         <div class="item">Flex item 3</div>
@@ -54,7 +55,12 @@
       <br><br>
 
       <h2>Alinhamento vertical: align-items-ALINHAMENTO (start, center, end, baseline e stretch)</h2>
-      <div class="caixa">
+      <div class="caixa d-flex align-items-end"> <!--basicamente ele alinha os itens nessa coluna então cada 1 alinha conforme o seu nome
+      baseline = fica na mesma linha
+      center = fica no centro
+      end = fica embaixo
+      start = padrão
+      stretch = ele ocupa tudo de cima para baixo-->
         <div class="item">Flex item 1</div>
         <div class="item">Flex item 2</div>
         <div class="item">Flex item 3</div>
@@ -62,12 +68,14 @@
       <br><br>
 
       <h2>Alinhamento self: align-self-ALINHAMENTO (start, center, end, baseline e stretch)</h2>
-      <div class="caixa">
-        <div class="item">Flex item 1</div>
-        <div class="item">Flex item 2</div>
-        <div class="item">Flex item 3</div>
-        <div class="item">Flex item 4</div>
-        <div class="item">Flex item 5</div>
+      <div class="caixa d-flex">
+        <!--basicamente ele alinha os itens da d-flex então onde ele vai começar? ele poderia ficar na parte de baixo ou na parte de cima então tem várias coisas que poderia ser feitas para alinhar
+        as coisas aqui, no caso os itens da d-flex caixa-->
+        <div class="item align-self-center">Flex item 1</div>
+        <div class="item align-self-end">Flex item 2</div>
+        <div class="item align-self-start">Flex item 3</div>
+        <div class="item align-self-stretch">Flex item 4</div>
+        <div class="item align-self-baseline">Flex item 5</div> 
       </div>
       <br><br>
 
