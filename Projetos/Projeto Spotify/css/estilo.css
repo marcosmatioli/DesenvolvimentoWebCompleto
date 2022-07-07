@@ -40,6 +40,30 @@ body{
 .capa{
     text-align: center;
 }
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    text-transform: uppercase;
+    -webkit-border-radius:500px;
+    -moz-border-radius:500px;
+    transition: background 0.4s,color 0.4s;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+.btn-roxo{
+    background: #7c25f8;
+}
+.btn-roxo:hover {
+    background: #6207e3;
+    color: white;
+}
+.btn-branco{
+    border: 2px solid white;
+}
+.btn-branco:hover {
+    background: white;
+    color: black;
+}
 h1{
     font-weight: 900;
     letter-spacing: -0.05em;
@@ -49,12 +73,16 @@ h1{
 /*media queries
 / Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
-    
+    .btn-custom{
+        margin: 10px 15px;
+    }
  }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) { 
-    
+    .btn-custom{
+        margin: 10px 15px;
+    }
  }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -69,6 +97,7 @@ h1{
     h1.display-4 {
         font-size: 5em;
     }
+
  }
 
 /* Extra large devices (large desktops, 1200px and up)*/
