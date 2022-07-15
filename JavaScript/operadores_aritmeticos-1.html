@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+
+        var num1 = prompt('Digite o valor de num1')
+        var num2 = prompt('Digite o valor de num2')
+
+        num1 = parseInt(num1)
+        num2 = parseInt(num2)
+
+        /*Adição + soma os valores
+        subtração - diferença entre valores
+        multiplicação * multiplca os valores
+        divisão / divide os valores
+        módulo % resto existente de uma operação da divisão ele volta o restante da divisão
+        incremento ++ pré ou pós incremento adiciona 1 ao valor
+        decremento -- pré ou pós incremento diminui 1 no valor*/
+
+        
+        document.write('A soma entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 + num2) + '<br />')
+        document.write('A subtração entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 - num2) + '<br />')
+        document.write('A multiplicação entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 * num2) + '<br />')
+        document.write('A divisão entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 / num2) + '<br />') 
+        /* tem que ter um tratamento na divisão pq o número é um inteiro e do nada aparece um resultado com fração então seria
+        bom colocar um tratamento aqui também na hora de aparecer o resultado*/1
+        document.write('A divisão entre ' + num1 + ' e ' + num2 + ' é: ' + (parseInt(num1 / num2)) + '<br />')
+        document.write('O módulo entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 % num2) + '<br />')
+        document.write('O incremento de ' + num1 + ' é: ' + (num1++) + '<br />')
+        document.write(num1 + '<br />')
+        document.write('O decremento de ' + num1 + ' é: ' + (num1--) + '<br />')
+        document.write(num1 + '<br/>')
+        document.write((--num1)+'<br/>')
+        document.write(num1 + 'valor pré incremento subtração<br/>')
+        document.write((++num1)+'valor pré incremento adição<br/>')
+        document.write(num1 + '<br/>')
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

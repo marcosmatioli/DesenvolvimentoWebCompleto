@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+
+      //false = false
+      /*
+      if(!(5 >= 2)) {
+        document.write('Verdadeiro')
+      } else {
+        document.write('Falso')
+      }
+      */
+      // && esse é o operador logico E então deve ser um E o outro
+      // || os dois pauzinhos ai que fica do lado do Z ele é OU , um ou outro atendendo a requisição ja entra no caso
+      // ! negação, ele inverte o resultado da expressão de comparação só true e false?, então se chegar true e vc colocar isso então ele vira false para vc fazer os seus testes
+      var nota = prompt('Digite a nota do aluno:')
+      var faltas = prompt('Digite a quantidade de faltas:')
+
+      var media = 7
+      var faltas_maximas = 15
+
+      if (nota >= media && faltas <= faltas_maximas) {
+        document.write('Aprovado')
+      
+      } else { 
+        document.write('Reprovado')
+      }
+
+
+      /*--------------------------------------------------------------------------------*/
+      document.write('<hr/>')
+      if(2 == 2 && 3 == 3){
+        document.write('Verdadeiro')
+      }
+      document.write('<hr/>')
+      if(2 == 2 && !(3 == 3)){ /*que a negação ela tem que ser negando algo como um todo, um resultado de algo*/
+        document.write('Verdadeiro')
+      }else{
+        document.write('Falso')
+      }
+      document.write('<hr/>')
+      if(2 == 2 || !(3 == 3)){ /*que a negação ela tem que ser negando algo como um todo, um resultado de algo*/
+        document.write('Verdadeiro')
+      }else{
+        document.write('Falso')
+      }
+    </script>
+  </head>
+
+  <body>
+  </body>
+</html>
