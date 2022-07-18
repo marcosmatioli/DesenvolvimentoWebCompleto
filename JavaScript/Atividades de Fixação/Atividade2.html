@@ -6,6 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+
+        var nome = prompt('Entre com o Nome')
+        var peso = prompt('Entre com o Peso')
+        var altura = prompt('Entre com a altura em centimetros')
+        altura = altura / 100;
+        document.write('<hr/>')
+        var m =  peso / (altura*altura);
+        m = m.toFixed(2)
+        var classi1 = null;
+        var m1=m;
+
+        /*tentei fazer com switch mas depois de uma pesquisa/estudo vi que o switch faz uma comparação === ou seja tem que ser igual e ele trabalha com boolean
+        ou seja a comparação retorna um boolean tipo (m<16)? se for sim vai voltar true, e esse true vai ser comparado com a variavel m e então não vai ser identicas
+        então não tem como isso dar certo, se der nesse momento não tenho conhecimento para fazer isso*/
+        switch (m){
+            case (m < 16):
+                classi1 = 'Baixo peso muito grave'
+                break
+            case (m >= 16 && m <= 16.99):
+                classi1 = 'Baixo peso grave'
+                break
+            case (m>= 17 && m <= 18.49):
+                classi1 = 'Baixo peso'
+                break
+            case (m >= 18.50 && m <= 24.99):
+                classi1 = 'Peso Normal'
+                break
+            case (m >= 25 && m <= 29.99):
+                classi1 = 'Sobrepeso'
+                break
+            case (m >= 30 && m <= 34.99):
+                classi1 = 'Obsidade grau I'
+                break
+            case (m >= 35 && m <= 40):
+                classi1 = 'Obsidade grau II'
+                break
+            default:
+                classi1 = 'Valores inseridos errados'
+        }
+
+        document.write('Feito com switch === '+ nome +' possui índice de massa corporal igual a '+ m1 +', sendo classificado como: '+ classi1 +'.')
+
+        if(m<16){
+            classificacao = 'Baixo peso muito grave'
+        }
+        else if(m>=16 && m <= 16.99){
+            classificacao = 'Baixo peso grave'
+        }
+        else if(m>=17 && m <= 18.49){
+            classificacao = 'Baixo peso'
+        }
+        else if(m>=18.50 && m <= 24.99){
+            classificacao = 'Peso Normal'
+        }
+        else if(m>=25 && m <= 29.99){
+            classificacao = 'Sobrepeso'
+        }
+        else if(m>=30 && m <= 34.99){
+            classificacao = 'Obsidade grau I'
+        }
+        else if(m>=35 && m <= 40){
+            classificacao = 'Obsidade grau II'
+        }
+        else{
+            classificacao = 'Valores inseridos incorretamente, por favor tente novamente.'
+        }
+        document.write('<hr/>')
+        document.write('Feito com if e else === '+ nome +' possui índice de massa corporal igual a '+ m +', sendo classificado como: '+ classificacao +'.')
         
     </script>
 </head>
