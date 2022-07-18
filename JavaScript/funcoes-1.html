@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <script>
+//primeiro um verbo no infinitivo e o segundo começa com a letra maiuscula já sendo referente a função
+var largura = prompt('Entre com a largura')
+var comprimento = prompt('Entre com o comprimento')
+
+//funções void e funções return, é quando volta algo
+ function calcularAreaTerreno(largura, comprimento){
+
+    //lógica da função
+    var area = comprimento * largura
+    
+    return area
+}
+var area = calcularAreaTerreno(15,25);
+
+document.write('O terreno possui '+ area +' metros quadrados')
+document.write('<hr/>')
+document.write('O terreno possui '+ calcularAreaTerreno(largura,comprimento) +' metros quadrados')
+document.write('<hr/>')
+document.write(calcularAreaTerreno(15,25))
+        
+    </script>
+</head>
+<body>
+ 
+</body>
+</html>
