@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+
+      var data = new Date() /*aqui ele pega a data do sistema operacional*/
+
+      document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
+      document.write('<br/>')
+
+      document.write(data.getDate())
+      document.write('<br/>')
+
+      document.write(data.getMonth()+1) /*janeiro é considerado o mês 0 então tem que colocar +1 para dar continuidade nas coisas*/
+      document.write('<br/>')
+
+      document.write(data.getFullYear())
+      document.write('<br/>')
+
+      document.write(data.getMilliseconds())
+      document.write('<br/>')
+      document.write(data.getMinutes())
+      document.write('<br/>')
+      document.write(data.getHours())
+      //19 07 2022
+
+    </script>
+    
+  </head>
+
+  <body>
+  </body>
+</html>
