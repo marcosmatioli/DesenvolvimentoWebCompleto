@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+   
+   <script>
+
+    //  function acao(){
+    //    alert('Evento disparado')
+    //  }
+     function acao1(){
+       alert('Elemento foi cliclado')
+     }
+     function acao2(){
+       alert('O cursor do mouse deixou a região do elemento')
+     }
+
+    </script>
+    
+  </head>
+
+  <body>
+    <!--
+      onclick = quando clica uma vez no elemento que dispara a função
+      ondbclick = quando da double click no elemento que dispara a função
+      onmouseup = quando vc solta o click dispara a função
+      onmouseover = quando passa o mouse na area do elemento ja dispara a função
+      onmouseout = quando vc entra na area do elemento não acontece nada mas quando vc sai ele dispara a função
+      podemos colocar várias funções do mouse em um mesmo elemento, que dispara várias funções no sistema
+      alguns eventos não estão disponiveis para o javascript
+      HTML DOM EVENTS NO W3SCHOOL
+    -->
+    <!-- <div onclick="acao()" style="background-color: #ccc; height: 150px; width: 150px;"></div> --> 
+    <!-- <div ondblclick="acao()" style="background-color: #ccc; height: 150px; width: 150px;"></div> -->
+    <!-- <div onmouseup="acao()" style="background-color: #ccc; height: 150px; width: 150px;"></div> -->
+    <!-- <div onmouseover="acao()" style="background-color: #ccc; height: 150px; width: 150px;"></div> -->
+    <!-- <div onmouseout="acao()" style="background-color: #ccc; height: 150px; width: 150px;"></div> -->
+    <div onclick="acao1()" onmouseout="acao2()" style="background-color: #ccc; height: 150px; width: 150px;"></div>
+  </body>
+</html>

@@ -59,7 +59,7 @@
       var milissegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime()) /*retorna um resultado absoluto ou seja positivo*/
       document.write(milissegundos_entre_datas)
       document.write('<hr />')
-      
+
       //1 dia tem 24, cada hora tem 60 minutos, 
       //cada minuto tem 60 segundos e 
       //cada segundo tem 1000 milissegundos
@@ -68,7 +68,7 @@
       document.write(' 1 dia tem: ' + milissegundos_por_dia + ' milissegundos' )
 
       document.write('<br /><br /><hr />')
-      document.write('A diferença entre data1 e data2 é de ' + Math.ceil(milissegundos_entre_datas / milissegundos_por_dia) + ' dia(s)')
+      document.write('A diferença entre data1 e data2 é de ' + Math.ceil(milissegundos_entre_datas / milissegundos_por_dia) + ' dia(s)') /*arredondamento math.ceil */
     </script>
     
   </head>

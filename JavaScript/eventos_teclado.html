@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+   
+   <script>
+
+    
+     function acao1(){
+       alert('evento 1 disparado')
+     }
+     function acao2(){
+       alert('evento 2 disparado')
+     }
+     function acao3(){
+       alert('evento 3 disparado')
+     }
+     
+
+    </script>
+    
+  </head>
+
+  <body>
+    <!--
+      onkeydown = acionado no momento que a tecla é pressionada
+      onkeyup = quando vc solta a tecla o evento é disparado
+      onkeypress = quando a tecla for um caracter, CTRL, ALT e botões que não representam um caracter ele não vai ativar esse evento, então só se for um caracter
+    -->
+   <input onkeydown="acao1()" type="text">
+   <input onkeypress="acao2()" type="text">
+   <input onkeyup="acao3()" type="text">
+  </body>
+</html>
