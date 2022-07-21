@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+
+  
+  <script>
+    // var lista_frutas = Array()
+    
+    var lista_frutas3 = [] //pode ser feito dessa forma para atribuir a array
+
+    lista_frutas3[1] = 'Banana'
+    lista_frutas3[2] = true
+    lista_frutas3['x'] = 'Morango'
+    lista_frutas3[4] = 100 
+    
+    /*basicamente tem que ver se a array tem uma sequencia adequada para não retornar um valor inesperado e incoerente de length*/
+
+    var lista_frutas1 = Array('Banana', 'Maçã', 'Morango', 'Uva') /*criando um objeto do tipo array, ele começa do 0 até o 3 nesse caso então começa no 0*/
+    var lista_frutas4 = ['Banana', 'Maçã', 'Morango', 'Uva']
+
+    function validarArray(array1,array2){
+
+      if(array1 === array2){
+        return document.write('iguais e identicas')
+      }else {
+        return document.write('não identicas')
+      }
+    }
+    document.write(lista_frutas1[2].length)
+    document.write('<hr/><hr/>')
+    document.write(lista_frutas1)
+    document.write('<hr/><hr/>')
+    document.write(lista_frutas3[4])
+    document.write('<hr/><hr/>')
+    validarArray(lista_frutas4,lista_frutas1)
+    document.write('<hr/><hr/>')
+    document.write(lista_frutas4.length)
+
+
+  </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

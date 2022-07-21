@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 5</title>
+    <script>
+
+        var obj = Array('Cadeira', 'Impressora', 'Garfo')
+        
+        function addElemento(campo){
+            var index = obj.indexOf(campo)
+            
+            console.log(index)
+            if(campo === null || campo === undefined || campo === '' || campo === ' '){
+                alert('Informe um valor válido!')
+                
+            }else if(index == -1){
+                alert('Valor inserido dentro da array')
+                obj.push(campo)
+                document.getElementById('principal').value = ''
+            }else{
+                alert('Valor já contido dentro da array')
+                document.getElementById('principal').value = ''
+            }
+            console.log(obj)
+        }
+        function ordenarArray(obj){
+            obj.sort()
+            alert('Array Ordenada')
+            console.log(obj)
+        }
+        function verArray(ojb){
+            console.log(obj)
+        }
+        /*------------------------------------------------------------------------------------------------------------*/
+        /*Array com números*/
+        var obj1 = Array()
+        
+        function addElemento1(campo1){
+            var index1 = obj1.indexOf(campo1)
+            
+            console.log(index1)
+            if(campo1 === null || campo1 === undefined || campo1 === '' || campo1 === ' '){
+                alert('Informe um valor válido!')
+                
+            }else if(index1 == -1){
+                alert('Valor inserido dentro da array')
+                obj1.push(campo1)
+                document.getElementById('principal1').value = ''
+            }else{
+                alert('Valor já contido dentro da array')
+                document.getElementById('principal1').value = ''
+            }
+            console.log(obj1)
+        }
+        function ordenarArray1(obj1){
+            obj1.sort(ordenaNumeros)
+            alert('Array Ordenada')
+            console.log(obj1)
+        }
+        function verArray1(obj1){
+            console.log(obj1)
+        }
+        function ordenaNumeros(a , b){
+            return a - b
+        }
+        
+    </script>
+</head>
+<body>
+    
+        <input type="text" id="principal" placeholder="Enter com o dado">
+        <button class="" onclick="addElemento(document.getElementById('principal').value)">Adicionar na Array</button>
+        <button class="" onclick="verArray(obj1)">Ver Array</button>
+        <button class="" onclick="ordenarArray(obj)">Ordenar Array</button>
+        
+        <hr><hr><br>
+    <!--Aprimorei o exercicio e fiz também com uma array de números para ordena-la também
+    fentão basicamente podemos colocar nas duas arrays os valores e depois ver a array no console.log então é isso bom exercicio
+    -->>
+        <input type="text" id="principal1" placeholder="Enter com o dado">
+        <button class="" onclick="addElemento1(document.getElementById('principal1').value)">Adicionar na Array</button>
+        <button class="" onclick="verArray1(obj1)">Ver Array</button>
+        <button class="" onclick="ordenarArray1(obj1)">Ordenar Array</button>
+    
+    <!--
+        1) Crie uma aplicação web contendo um campo para entrada de texto (input text) e dois
+botões (buttons), sendo um botão com a descrição "Adicionar" e outro com a descrição
+"Ordenar", conforme imagem abaixo:
+Após criar os elementos de interação com o usuário acima, crie um Array de nome objetos contendo
+os seguintes valores:
+var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+Os próximos passos são:
+A) Ao clicar no botão "Adicionar" disparar função que irá:
+• Recuperar o valor contido no campo de texto.
+• Verificar se o valor está vazio ou preenchido.
+o Se vazio, exibir alert com a mensagem "Informe um valor válido".
+o Se preenchido:
+▪ Verificar se o valor informado já existe dentro do Array objetos.
+▪ Se existir, exibir alert com a mensagem "Objeto já foi adicionado".
+▪ Se não existir:
+• Incluir o valor preenchido no campo dentro do Array.
+• Efetuar um console.log do Array para debug (checar se está
+funcionado).
+• Limpar o valor contido no campo de entrada de texto.
+B) Ao clicar no botão "Ordenar" disparar função que irá:
+• Ordenar de forma alfabética os valores do Array de objetos.
+• Efetuar um console.log do Array para debug (checar se está funcionado).
+    -->
+</body>
+</html>
