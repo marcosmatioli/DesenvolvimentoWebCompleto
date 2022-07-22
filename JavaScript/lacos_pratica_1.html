@@ -15,10 +15,20 @@
     lista_frutas[3] = 'Uva'
 
     var y = 0 
+    var x = 0
+    
+    var arrayNumeros = Array()
+    
+//tentativa de adicionar elementos na array por while mas não consegui não sei porque
+    while(x <= 10){
+      arrayNumeros.pop(x)
+      x++
+      document.write(arrayNumeros[x] + '<br/>')
+    }
+    console.log(arrayNumeros)
 
     while(y < lista_frutas.length){
       document.write(lista_frutas[y] + '<br />')
-
       y++
     }
   </script>

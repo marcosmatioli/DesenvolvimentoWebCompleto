@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+
+
+  <script>
+    //se colocar 10 no y e x vc faz a tabuada do 10
+    for (var y = 1; y <= 10; y++) {
+
+      for (var x = 1; x <= 10; x++) {
+       // document.write('<hr />')
+        document.write(y + 'x' + x + ' = ' + (y * x) + '<br />')
+      }
+      document.write('<hr />')
+
+    }
+    //criação própria que é a raiz quadrada dos números 1 até 100
+    for(var y = 1; y <= 100; y++){
+      document.write('Raiz Quadrada de:'+ y +' = ' +Math.sqrt(y)+'')
+      document.write('<br />')
+    }
+    //aprimoramento invertido da raiz quadrada, arredondando números da raiz quadrada tentando lembrar alguns elementos javascript
+    for(var y = 1; y <= 100; y++){
+      document.write('Raiz Quadrada de:'+ y +' = ' +Math.round(Math.sqrt(y))+'')
+      document.write('<br />')
+    }
+
+    for(var x = 1; x <= 10000; x++){
+      document.write('2 elevado a '+ x + ': '+parseFloat(Math.pow(2,x))+'<br/>')
+    }
+    //tem como simplificar tudo isso
+    // for(var x = 1; x<=10; x++){
+    //   document.write('2 x' + x + ' = ' + (2 * x) + '<br />')
+    // }
+
+  </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

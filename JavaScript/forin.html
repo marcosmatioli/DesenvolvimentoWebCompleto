@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+
+
+  <script>
+    // var listaConvidados = ['Jorge', 'Jamilton', 'José', 'Ana', 'Maria']
+
+    var listaConvidados = Array()
+    //basicamente o "in" ele percorre toda a array independente do indice, o que pode ocorrer muito nas aplicações
+    listaConvidados['a'] = 'Jorge'
+    listaConvidados[10] = 'Jamilton'
+    listaConvidados['zebra'] = 'José'
+    listaConvidados[-1] = 'Ana'
+    listaConvidados[true] = 'Maria'
+    console.log(listaConvidados)
+
+    //novo elemento in, vamos ver do que ele é capaz
+    for(var x in listaConvidados){
+      console.log(x)
+      console.log('Índice ' + x + ' valor ' + listaConvidados[x])
+    }
+    //basicamente e
+    for(var y in listaConvidados){
+      document.write('Índice ' + y + ' valor ' + listaConvidados[y] + '<br/>')
+    }
+
+  </script>
+
+</head>
+
+<body>
+</body>
+
+</html>
