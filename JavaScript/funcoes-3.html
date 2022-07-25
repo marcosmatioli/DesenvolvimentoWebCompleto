@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+
+
+  <script>
+    //arguments, é tipo uma array um objet que  veja quantos argumentos foram passados para aquela função
+    function soma() {
+      var resultado = 0
+      for (var i in arguments) {
+        console.log(arguments[i]) //retorna um array com parametros das funções
+        resultado += arguments[i]
+      }
+      return resultado
+    }
+
+    console.log(soma(7, 5, 3.2, 0.8, 1, 'Texto'))
+  </script>
+
+</head>
+
+<body>
+</body>
+
+</html>
