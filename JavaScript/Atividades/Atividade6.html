@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 6</title>
+    <style>
+      
+    </style>
+    <script>
+
+        var teste = Array()
+
+    teste[0] = 'Banana' 
+    teste[1] = 'Maça' 
+    teste[2] = 'Morango' 
+    teste[3] = 'Uva' 
+    teste[4] = 'Banana' 
+    teste[5] = 'Maça' 
+    teste[6] = 'Morango' 
+    teste[7] = 'Uva' 
+
+    console.log(teste.length)
+        teste.length
+        document.write('Atividade 6.1')
+        document.write('<hr/> <br/>')
+    for(x = 0;x<teste.length; x++)    {
+        document.write(teste[x]+ '<br/>')
+        console.log(teste[x])
+    }
+    document.write('<hr/> <br/>')
+    document.write('Atividade 6.2')
+    document.write('<hr/> <br/>')
+    var z = 1
+    var y = 0
+    while(z<10){
+        while(y<=10){
+            document.write(z +'x' + y + ' = ' + ( z * y ) + ' <br/>')
+            y++
+        }
+       // tem que zerar a variavel y pois a mesma está com o seu valor antigo e por isso ele não acaba entrando no while, fazendo imprimir somente a tabuada
+      // do numero 1
+        document.write('<hr/> <br/>')
+        z++
+        y = 0 
+    }
+
+    </script>
+</head>
+<body>
+<div class="quadrado">
+    <div class="circulo"></div>
+</div>
+
+    
+     <!--
+        1) Baseado no exemplo da aula "Praticando um pouco - Percorrendo e listando itens de
+        Arrays", implemente a mesma solução, porém utilizando o comando for.
+
+        2) Baseado no exemplo da aula "Praticando um pouco - Criando uma tabuada de 1 a 10
+        (laços encadeados)", implemente a mesma solução, porém utilizando o comando while.
+     -->   
+</body>
+</html>
