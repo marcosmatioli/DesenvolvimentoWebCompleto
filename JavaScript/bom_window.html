@@ -6,9 +6,19 @@
   <title>JavaScript</title>
 
   <script>
-    function abrirPopUp(){
-     janela = window.open('http://www.google.com.br', 'nova_janela', 'width=200, height=100' )
+    var x = 'omg'
+    
+    function abrirPopUp(abrirAplicativo){
+      if(abrirAplicativo === 'google'){
+        janela = window.open('http://www.google.com.br', 'nova_janela')
+      }
+      if(abrirAplicativo === 'twitter'){
+        janela = window.open('https://twitter.com/home', 'nova_janela')
+      }
+    // janela = window.open('http://www.google.com.br', 'nova_janela', 'width=200, height=100' )
+    
     }
+    
     function fecharPopUp(){
       janela.close()
     }
@@ -18,7 +28,8 @@
 </head>
 
 <body>
-  <button onclick="abrirPopUp()">Abrir janela</button>
+  <button onclick="abrirPopUp('google')">Abrir google</button>
+  <button onclick="abrirPopUp('twitter')">Abrir Twitter</button>
   <button onclick="fecharPopUp()">Fechar janela</button>
   <button onclick="window.print()">Imprimir página</button>
 </body>

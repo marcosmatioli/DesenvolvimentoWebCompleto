@@ -6,17 +6,45 @@
   <title>JavaScript</title>
 
   <script>
-    // setTimeout(function(){document.write('Teste')}, 3000)
+    setTimeout(function () {
+      document.write('Teste')
+    }, 3000)
 
     var i = 5
-   var x =  setInterval(function() {
+    var x = setInterval(function () {
       document.write(i)
       i--
-      if(i === 0){
+      if (i === 0) {
         clearInterval(x)
       }
     }, 1000)
+    setInterval(function () {
+      document.write('Teste' + '<br />')
+    }, 2000)
 
+
+
+    /*----------------------------------------------------------------algumas tentativas de fazer algo mas sem sucesso T.T -----------------------------------------*/
+    // setTimeout(function(){document.write('Teste')}, 3000)
+
+    /* var i = 5
+     var x = setInterval(function () {
+       document.write(i)
+       i--
+       if (i === 0) {
+         clearInterval(x) // esse comando termina o interval
+       }
+     }, 1000) */
+
+    /* var z = setInterval(function () {
+       document.getElementById('muda').style.background = 'red'
+       console.log(z)
+       var y = setInterval(function () {
+         document.getElementById('muda').style.background = 'blue'
+         console.log(y)
+       }, 5000)
+
+     }, 10000) */ // teste feito para fazer mudança do background atuomáticamente mas não estou entendendo como funciona a variavel Z e Y respectivamente do objeto interval
 
     //setInterval(function(){document.write('Teste' + '<br />')}, 2000)
   </script>
@@ -24,7 +52,7 @@
 </head>
 
 <body>
-
+  <button onclick="clearInterval()">Botão stop</button>
 </body>
 
 </html>

@@ -6,24 +6,30 @@
   <title>JavaScript</title>
 
   <script>
+    var altura1 = window.screen.height
+    var largura1 = window.screen.width
+
+    document.write('Largura do navegador é: ' + largura1 + 'height <br /> ')
+    document.write('Altura do navegador é: ' + altura1 + 'width <br /> ')
+    document.write('<hr/>')
+    //o avail height e o avail width ele é o valor total que a pagina pode ocupar no seu monitor
     var altura = window.screen.availHeight
     var largura = window.screen.availWidth
-    
-    // document.write('Altura do navegador é: ' + altura + '<br />')
-    // document.write('Largura do navegador é: ' + largura + '<br />')
 
-    if(largura < 500){
+    document.write('Largura do navegador é: ' + largura + '<br/>')
+    document.write('Altura do navegador é: ' + altura + '<br/>')
+    document.write('<hr/>')
+    if (largura < 500) {
       document.write('Lógica para impressão do menu versão mobile')
     } else {
       document.write('Lógica para impressão do menu versão web')
-
     }
   </script>
 
 </head>
 
 <body>
-  
+
 </body>
 
 </html>
