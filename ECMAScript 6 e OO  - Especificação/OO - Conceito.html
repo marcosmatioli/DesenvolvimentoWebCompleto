@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ES6</title>
+
+
+    <script>
+        class Calculadora {
+            constructor(x,y,z) {
+                this.a = x
+                this.b = y
+                this.operador = 'mult'
+                console.log(this.a,this.b,this.operador)
+            }
+            calcular() {
+                if (this.operador === 'mult') {
+                    var resultado = this.a * this.b
+                    document.getElementById('result').value = resultado
+
+                }
+            }
+        }
+
+        function mult() {
+            var x = document.getElementById('number1').value
+            var y = document.getElementById('number2').value
+            var z = document.getElementById('mult').value
+            console.log(x,y,z)
+            conta = new Calculadora(x,y,z)
+            conta.calcular()
+        }
+        function setText()
+        {
+            document.getElementById('setando').value = document.getElementById('mult').value
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="number1" name="number1">Entre com o primeiro número:<br/>
+    <input type="text" id="number2" name="number2">Entre com o segundo número:<br/>
+    <input type="text" id="mult" name="mult" placeholder="mult"><br/>
+    <input type="text" id="result" disabled>Resultado<br/>
+    <input type="text" id="setando" disabled name="setando">Texto<br/>
+    <button id="btn" onclick="mult()">Multiplicar</button>
+    <button id="btn" onclick="setText()">Colocar Elemento</button>
+</body>
+
+</html>

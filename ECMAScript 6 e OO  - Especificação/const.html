@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ES6</title>
+    
+
+    <script>
+        /*const deve ter o seu nome de variavel em tudo maiusculo
+        usada para valores que não PODEM/DEVEM/VÃO sofrer alterações ou seja ela vai ser aquela até o final da aplicação
+        */
+        const SERIE = 'Friends'
+
+        console.log(SERIE)
+
+        //    SERIE = 'The Walking Dead' (cuidado!)
+        function x() {
+            /*const de bloco morre por aqui mesmo, ele não interfere no escopo global*/
+            const SERIE = 'The Walking Dead'
+            console.log('Dentro da função: ' + SERIE)
+        }
+        console.log('Fora da função: ' + SERIE)
+
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>

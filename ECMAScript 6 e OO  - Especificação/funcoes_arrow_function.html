@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ES6</title>
+
+
+    <script>
+        
+        let quadrado = function (x = 5) {
+            return x * x
+        }
+        /*arrow function não precisa escrever function*/
+        let quadrado1 = x => { 
+            return x * x
+        }
+        let quadrado5 = (x,y) => { //com 2 parametros precisa do parenteses
+            return x * x
+        }
+
+        let quadrado3 = x => x * x //return implicito essa aqui é a nova forma de fazer um function quando é para retornar algo
+        document.write(quadrado(3))
+
+        let parOuImpar = function (numero) {
+            if (numero % 2 === 0) {
+                return '<br/>par'
+            } else {
+                return '<br/>impar'
+            }
+        }
+
+        let parOuImpar1 = numero => {
+            if (numero % 2 === 0) {
+                return '<br/>par'
+            } else {
+                return '<br/>impar'
+            }
+        }
+        // variavel, nome da variavel, nome da funcão, comparação da função com 0, interrogação ? como se fosse pergunta
+        // depois se true o primeiro caso, separa por : se for false cai no segundo caso else
+        let parOuImpar3 = numero => numero % 2 === 0 ? '<br/>par' : '<br/>ímpar' //return implicito
+
+        document.write(parOuImpar(10))
+        document.write(parOuImpar1(5))
+        document.write(parOuImpar3(37845634856))
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>

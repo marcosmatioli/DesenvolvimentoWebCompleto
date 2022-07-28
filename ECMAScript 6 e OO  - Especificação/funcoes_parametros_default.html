@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ES6</title>
+
+
+    <script>
+        /*basicamente está aula diz que podemos deixar parametros default para não ocorrer um erro
+        então podemos deixar valores default*/
+        function contarUmaHistoria(personagem = 'Fubá', atividade = 'Correr', nome_dono = 'João') { 
+            document.write(
+                `Era uma vez um cachorro chamado ${personagem}, ele adorava ${atividade}, seu dono era o ${nome_dono} e eles viveram felizes para sempre`
+                )
+        }
+        /*se eu quiser deixar o parametro em branco eu posso enviar um parametro undefined e ele preenche com os parametros padrões*/
+        contarUmaHistoria(undefined, 'Enterrar ossos', 'Pedro')
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>

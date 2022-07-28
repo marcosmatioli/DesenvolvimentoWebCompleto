@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ES6</title>
+    
+
+    <script>
+        /*basicamente é um metodo de não concatenar sem usar os + + a gente usa a ` ` é o cento agudo invertido(crase) */
+    let nome = 'Jorge'
+
+    console.log('Oi ' + nome + ', tudo bem?')
+    console.log(`Oi ${nome}, tudo bem?`)
+
+    console.log(`7 + 7 = ${7+7}`)
+    console.log(`Olá tudo bem está é uma string ${nome} e esse é o resultado de algo ${calcular(10,5)}`)
+    console.log(``)
+
+    function calcular(x, y){
+        return x * y
+    }
+
+    console.log(`A multiplicação de 8 * 8 é: ${calcular(8,8)}`)
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>
