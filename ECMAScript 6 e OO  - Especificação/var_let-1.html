@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ES6</title>
+    <!--
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+-->
+
+
+    <script>
+        // 3 escopos: global, funções e bloco
+        /*uma variavel de escopo global é global.
+        uma variavel de escopo de função, ela não sofre elevação, ou seja não se torna global.
+        porem uma variavel de bloco sofre elevação ou seja se o bloco está dentro de uma função ou dentro do escopo global, ela sofre elevação e pode ser acessada.
+        o let ele preserva o escopo que ela foi criada, hoje seja ela não sofre elevação e nem nada*/
+        var serie = "G = Friends"
+
+        function x() {
+
+            var serie = "Game Of Thrones"
+            console.log('X = função : ' + serie)
+            if (true) {
+                console.log('X = bloco dentro da função: ' + serie)
+            }
+        }
+
+        x()
+
+        if (true) {
+            console.log('X = global: ' + serie)
+        }
+        //---------------------------------------------------------------------------
+        function y() {
+
+            console.log('Y = dentro da função: ' + serie)
+
+            if (true) {
+                var serie = 'The Walking Dead'
+
+            }
+        }
+
+        x()
+        if (true) {
+            var serie = 'Y = The Walking Dead'
+            x()
+            console.log(serie)
+        }
+
+        console.log(serie)
+        //---------------------------------------------------------------------------
+
+        if (true) {
+            let serie = "LET - Friends" //esse let não sofre elevação ou seja ela é preservada somente no escopo que ela foi declarada
+            console.log(serie)
+        }
+        console.log(serie)
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>

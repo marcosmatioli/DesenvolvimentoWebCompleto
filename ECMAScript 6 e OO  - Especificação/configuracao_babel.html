@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ES6</title>
+    
+    <!--agora podemos retirar essa parte pq o babel pegava os comandos de ES6 e traduzia para o ES5 e agora todos os navegadores
+    suportam o ES o que faz com o babel não seja mais necessário
+
+
+    
+
+    -->
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    
+    <script type="text/babel">
+        const getMessage = () => "Hello World";
+        document.getElementById('output').innerHTML = getMessage();
+    </script>
+
+    <!--
+
+   <script>
+        const getMessage = () => "hello world";
+        document.getElementById('output').innerHTML = getMessage();
+    </script>
+
+    -->
+    
+    
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>
