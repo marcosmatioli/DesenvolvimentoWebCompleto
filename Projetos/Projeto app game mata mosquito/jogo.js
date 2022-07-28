@@ -3,17 +3,59 @@ foi utilizado onresize e a função ajustaTamanhoPalcoTela*/
 
 var altura = 0
 var largura = 0
+var vidas = 1
+var tempo = 10
+var nivel = window.location.search
+var criarMosquitoTempo = 1500
+nivel = nivel.replace('?', '')
+
+console.log(nivel.replace('?', ''))
+if (nivel === 'normal') {
+    //1500 segundos para aparecer o mosquito
+    criarMosquitoTempo = 1500
+} else if (nivel === 'dificil') {
+    //1000 segundos para aparecer o mosquito
+    criarMosquitoTempo = 1000
+} else if (nivel === 'chucknorris') {
+    //750 segundos para aparecer o mosquito
+    criarMosquitoTempo = 500 
+}
 
 function ajustaTamanhoPalcoJogo() {
     altura = window.innerHeight
     largura = window.innerWidth
+    /**para depuração no console log */
     console.log('Altura do monitor: ' + altura + ' Largura do monitor: ' + largura)
 }
 ajustaTamanhoPalcoJogo()
 
-/** vai ser criado o número random para aparecer o mosquito na tela */
+/**cronometro do tempo para tela de vitória */
+var cronometro = setInterval(function () {
+    /**innerHTML é dentro da tag HMTL */
+    tempo -= 1
+    if (tempo < 0) {
+        clearInterval(cronometro)
+        clearInterval(criaMosquito)
+        window.location.href = 'vitoria.html'
+    } else {
+        document.getElementById('cronometro').innerHTML = tempo
+    }
+}, 1000)
 
+/** vai ser criado o número random para aparecer o mosquito na tela */
 function posicRandomica() {
+    //remover o mosquito anterior (caso exista)
+    if (document.getElementById('mosquito')) {
+        //remove o elemento mosquito
+        document.getElementById('mosquito').remove()
+        if (vidas > 3) {
+            //game over
+            window.location.href = 'fim_de_jogo.html'
+        } else {
+            document.getElementById('v' + vidas).src = 'img/coracao_vazio.png'
+            vidas++
+        }
+    }
     var posicaoX = Math.floor(Math.random() * largura) - 90
     var posicaoY = Math.floor(Math.random() * altura) - 90
 
@@ -38,37 +80,37 @@ function posicRandomica() {
      */
     var mosquito = document.createElement('img')
     mosquito.src = 'img/mosquito.png'
-    //concatenando classes tem quer ter um   \/ espaço para eles não ficarem grudados
-    mosquito.className = tamanhoAleatorio() +' '+  ladoAleatorio()
+    //concatenando classes tem quer ter um   \/ espaço para eles não ficarem 
+    mosquito.className = tamanhoAleatorio() + ' ' + ladoAleatorio()
     mosquito.style.left = posicaoX + 'px'
     mosquito.style.top = posicaoY + 'px'
     mosquito.style.position = 'absolute'
+    mosquito.id = 'mosquito'
+    mosquito.onclick = function () {
+        this.remove()
+    }
     document.body.appendChild(mosquito)
-    
-    
 }
 
 function tamanhoAleatorio() {
-    var rng = Math.floor(Math.random() * 3)
-    console.log('Tamanho do mosquito: ' + rng)
-    switch (rng) { // não precisa do break pq o return ja é considerado o ultima coisa da função
+    var rngTamanho = Math.floor(Math.random() * 3)
+    console.log('Tamanho do mosquito: ' + rngTamanho)
+    switch (rngTamanho) { // não precisa do break pq o return ja é considerado o ultima coisa da função
         case 0:
             return 'mosquito1'
-
         case 1:
             return 'mosquito2'
-
         case 2:
             return 'mosquito3'
     }
 }
-function ladoAleatorio(){
-    var rng1 = Math.floor(Math.random() * 2)
-    console.log('Valor do lado do mosquito 0 é LadoA / 1 é LadoB: ' + rng1)
-    switch (rng1) { // não precisa do break pq o return ja é considerado o ultima coisa da função
+
+function ladoAleatorio() {
+    var rngLado = Math.floor(Math.random() * 2)
+    console.log('Valor do lado do mosquito 0 é LadoA / 1 é LadoB: ' + rngLado)
+    switch (rngLado) { // não precisa do break pq o return ja é considerado o ultima coisa da função
         case 0:
             return 'ladoA'
-
         case 1:
             return 'ladoB'
     }

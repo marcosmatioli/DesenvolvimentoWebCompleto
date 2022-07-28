@@ -31,17 +31,24 @@
   <title>Jogo Mata Mosquito</title>
 </head>
 
-<body onresize="ajustaTamanhoPalcoJogo()">
+<body>
 
   <!--Conteudo Principal-->
-  <div class="painel">
-    <div class="vidas">
-      <img id="v1" src="img/coracao_cheio.png" alt="">
-      <img id="v2" src="img/coracao_cheio.png" alt="">
-      <img id="v3" src="img/coracao_cheio.png" alt="">
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="d-flex justify-content-center">
+          <img src="img/game_over.png" alt="">
+        </div>
+      </div>
     </div>
-    <div class="cronometro">
-      Tempo Restante: <span id="cronometro"></span>
+    <div class="row">
+      <div class="col">
+        <div class="d-flex justify-content-center">
+          <button class="btn btn-dark btn-lg" onclick=" window.location.href = ' index.html' ">Reiniciar</button>
+        </div>
+      </div>
     </div>
   </div>
   <!-- Optional JavaScript -->
@@ -57,11 +64,6 @@
   </script>
   <script>
 
-    document.getElementById('cronometro').innerHTML = tempo
-
-    var criaMosquito = setInterval(function () {
-      posicRandomica()
-    }, criarMosquitoTempo)
   </script>
 </body>
 
