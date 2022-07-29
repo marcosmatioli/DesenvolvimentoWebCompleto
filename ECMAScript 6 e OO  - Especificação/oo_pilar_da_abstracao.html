@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+
+    <script>
+        //modelo da entidade/objeto
+        class ContaBancaria {
+            /*canion case, ContaBancaria, class tem que ser assim os dois primeiros maiusculo*/
+            //agencia
+            //numeroConta
+            //saldo
+            //limite
+            constructor() {
+                /*a instância é a construção do objeto, basicamente iniciando o objeto*/
+                this.agencia = 1075
+                this.numeroConta = 8351125 
+                this.saldo = 50
+                this.limite = 450
+            }
+            depositar(valorDeposito) {
+                this.saldo += valorDeposito
+            }
+            sacar(valorSaque) {
+                this.saldo -= valorSaque
+            }
+            consultarSaldo() {
+                return this.saldo
+            }
+        }
+
+        let x = new ContaBancaria() //contas diferentes
+        let y = new ContaBancaria() //contas diferentes
+        let z = new ContaBancaria() //conta diferente
+        console.log(x.consultarSaldo())
+        x.depositar(450)
+        console.log(x.consultarSaldo())
+        x.sacar(200)
+        console.log(x.consultarSaldo())
+        console.log(y.consultarSaldo())
+    </script>
+</head>
+
+<body>
+    <!--melhorando a aplicatação para melhor entendimento de como fazer as coisas mais para a frente-->
+    <form action="">
+        Entre com o valor a ser depositado: <input type="text" id="valor">
+    </form>
+
+    <br>
+    <button onclick="x.depositar(parseInt(document.getElementById('valor').value))">Deposita em X</button>
+    <button onclick="y.depositar(parseInt(document.getElementById('valor').value))">Deposita em Y</button>
+    <button onclick="console.log('Saldo em X: '+x.consultarSaldo())">Consultar Saldo em X</button>
+    <button onclick="console.log('Saldo em Y: '+y.consultarSaldo())">Consultar Saldo em Y</button>
+    <br><hr>
+    <button onclick="z.depositar(parseInt(document.getElementById('valor').value))">Deposita em Z</button>
+    <button onclick="console.log('Saldo em Z: '+z.consultarSaldo())">Consultar Saldo em Z</button>
+    
+</body>
+
+</html>
