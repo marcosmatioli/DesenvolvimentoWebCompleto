@@ -18,7 +18,7 @@ if (nivel === 'normal') {
     criarMosquitoTempo = 1000
 } else if (nivel === 'chucknorris') {
     //750 segundos para aparecer o mosquito
-    criarMosquitoTempo = 500 
+    criarMosquitoTempo = 750
 }
 
 function ajustaTamanhoPalcoJogo() {

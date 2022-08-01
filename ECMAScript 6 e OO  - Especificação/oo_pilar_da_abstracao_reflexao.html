@@ -63,21 +63,32 @@
                 }
             }
         }
+        //aqui a gente cria cada cadeira diferente
         // let cadeira = new Cadeira(4, false, 'azul')
         // let cadeira2 = new Cadeira(1, true, 'vermelha')
 
-       let cadeiras = Array()
+       let cadeiras = Array() // porque aqui cada 1 vai ter um indice que vai ser o seu respectivo negocio único
        cadeiras.push(new Cadeira(4, false, 'azul'))
        cadeiras.push(new Cadeira(1, true, 'vermelha'))
         // console.log(cadeira)
        //cadeira2.girarCadeira()
-
+        class Sofa{
+            constructor(cor,qtd_lugares){
+                this.cor = cor
+                this.qtd_lugares = qtd_lugares
+            }
+            
+        }
+        let sofas = Array()
+        sofas.push(new Sofa('Roxo',4))
+        sofas.push(new Sofa('Roxo',4))
+        sofas.push(new Sofa('Roxo',4))
 
     </script>
 </head>
 
 <body>
-    <div id="output"></div>
+    
 </body>
 
 </html>

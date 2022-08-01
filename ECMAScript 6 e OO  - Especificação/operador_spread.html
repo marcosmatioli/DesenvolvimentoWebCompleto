@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ES6</title>
+
+    
+
+    <script>
+      
+      let filmes = ['Star Wars', 'The Lord of the Rings', 'Harry Potter']
+      let series = ['Tow and Half Men', 'How I Met Your Mother']
+      let animes = ['Naruto', 'Dragon Ball', 'Pokémon']
+
+      //let todos = [filmes, series, animes]
+      //let todos = ['Naruto', filmes, 'Dragon Ball', series, 'Pokémon']
+      let todos = [...animes, ...filmes, ...series]
+      /*ele coloca todos os arrays em uma só com esses ... antes da array*/
+
+      console.log(todos)
+
+    </script>
+    
+  </head>
+  <body>
+    <div id="output"></div>
+  </body>
+</html>

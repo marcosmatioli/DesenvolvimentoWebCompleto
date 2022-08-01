@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ES6</title>
+
+
+    <script>
+        class Tv {
+            constructor() {
+                /*o _ antes da variavel é uma convenção que foi adotada para que quando há esse _ é uma variavel do tipo PRIVADO, porem não é mas
+                deve ser tratada como se fosse, logo adiante veremos para o public e o protected*/
+                this._relacaoCanais = Array(2, 4, 5, 7, 10)
+                this._canalAtivo = 5
+                this._volume = 5
+            }
+            //getters setters
+            get canalAtivo() {
+                /*função para retornar um valor private hipotético*/
+                return this._canalAtivo
+            }
+
+            set canalAtivo(canal) {
+                /*função para set - colocar - um valor em algum valor privado hipotético*/
+                if (this._relacaoCanais.indexOf(canal) !== -1) {
+                    this._canalAtivo = canal
+                }
+            }
+        }
+        let tv = new Tv()
+        console.log(tv.canalAtivo)
+        tv.canalAtivo = 11
+        //tv.canalAtivo = 3
+        console.log(tv.canalAtivo)
+    </script>
+</head>
+
+<body>
+   
+    <br>
+    <button onclick="tv.canalAtivo = parseInt( document.getElementById('canal1').value)" id="canal1" value="1">1</button>
+    <button onclick="tv.canalAtivo = parseInt( document.getElementById('canal2').value)" id="canal2" value="2">2</button>
+    <button onclick="tv.canalAtivo = parseInt( document.getElementById('canal4').value)" id="canal4" value="4">4</button>
+    <button onclick="tv.canalAtivo = parseInt( document.getElementById('canal5').value)" id="canal5" value="5">5</button>
+    <button onclick="tv.canalAtivo = parseInt( document.getElementById('canal7').value)" id="canal7" value="7">7</button>
+    <button onclick="console.log(tv.canalAtivo)" id="canal2">Ver canal</button>
+    <br>
+    <hr>
+
+
+</body>
+
+</html>

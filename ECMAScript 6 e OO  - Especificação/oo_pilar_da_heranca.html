@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+
+ 
+
+  <script>
+
+    class Animal {
+        constructor() {
+          this.cor = ''
+          this.tamanho = null
+          this.peso = null
+        }
+
+        dormir() {
+          console.log('Dormir')
+        }
+      }
+      
+      class Cachorro extends Animal {
+        constructor(){
+          super()
+          this.orelhas = 'Grandes e caídas'
+        }
+
+        correr() {
+          console.log('Correr')
+        }
+
+        rosnar() {
+          console.log('Rosnar')
+        }
+      }
+
+      class Passaro extends Animal {
+        constructor() {
+          super()
+          this._bico = 'Curto'
+        }
+        set bico(bico){
+          return this._bico = bico
+        }
+        voar() {
+          console.log('Voar')
+        }
+
+      }
+
+      class Papagaio extends Passaro {
+        constructor() {
+          super()
+          this.sabeFalar = true
+        }
+
+        falar() {
+          console.log('Falar')
+        }
+      }
+      /*variavel\/ ------ class \/ */
+      let cachorro = new Cachorro()
+      let passaro = new Passaro()
+      let papagaio = new Papagaio()
+      papagaio.bico = 'Grande'
+      console.log()
+      
+      cachorro.dormir()
+      passaro.dormir()
+      papagaio.falar()
+      papagaio.dormir()
+      papagaio.voar()
+      
+
+      console.log(cachorro)
+      console.log(passaro)
+      console.log(papagaio)
+
+    </script>
+
+</head>
+
+<body>
+  <!-- <br>
+    <button onclick="tv.canalAtivo = parseInt( document.getElementById('canal1').value)" id="canal1" value="1">1</button>
+    <button onclick="tv.canalAtivo = parseInt( document.getElementById('canal2').value)" id="canal2" value="2">2</button>
+    <button onclick="tv.canalAtivo = parseInt( document.getElementById('canal4').value)" id="canal4" value="4">4</button>
+    <button onclick="tv.canalAtivo = parseInt( document.getElementById('canal5').value)" id="canal5" value="5">5</button>
+    <button onclick="tv.canalAtivo = parseInt( document.getElementById('canal7').value)" id="canal7" value="7">7</button>
+    <button onclick="console.log(tv.canalAtivo)" id="canal2">Ver canal</button>
+    <br>
+    <hr>
+  -->
+</body>
+
+</html>
