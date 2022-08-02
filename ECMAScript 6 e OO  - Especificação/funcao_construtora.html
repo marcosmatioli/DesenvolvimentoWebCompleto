@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ES6</title>
+
+
+    <script>
+        /*basicamente aqui temos atributose com funções dentro, quando vc chama o atributo ele já executa a ação então facilitando as coisas*/
+        let Carro = function () {
+            this.cor = 'Amarelo'
+            this.modelo = 'Chevette'
+            this._velocidadeAtual = 0
+            this.velocidadeMaxima = 100
+
+            this.acelerar = function () {
+                // this.velocidadeAtual += 10
+                //console.log(`Velocidade máxima do carro é: ${this.velocidadeMaxima}`)
+                let velocidade = this.getVelocidadeAutal() + 10
+                this.setVelocidadeAtual(velocidade)
+            }
+            this.reduzir = function () {
+                let velocidade = this.getVelocidadeAutal() - 10;
+                this.setVelocidadeAtual(velocidade)
+            }
+            this.getVelocidadeAutal = function () {
+                return this._velocidadeAtual
+            }
+            this.setVelocidadeAtual = function (velocidadeAtual) {
+                this._velocidadeAtual = velocidadeAtual
+            }
+        }
+
+        let carro = new Carro()
+
+        console.log(`A velocidade atual é ${carro.getVelocidadeAutal()}`)
+        carro.acelerar()
+        console.log(`A velocidade atual é ${carro.getVelocidadeAutal()}`)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

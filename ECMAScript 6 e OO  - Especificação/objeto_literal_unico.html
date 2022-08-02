@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    
+
+    <script>
+
+      let assinatura = {
+        idCliente: 1000,
+        descricao: 'Acesso a internet',
+        status() {
+          console.log('Ativo')
+        }
+      }
+
+      console.log(`usando assinatura: ${assinatura.descricao}`)
+/*então basicamente colocar a variavel em outro variavel não cria um novo objeto ele simplesmente agora aponta para o mesmo objeto
+todas as alterações que serão feitas vai ser para os dois como no exemplo*/
+      let y = assinatura
+      console.log(y)
+      console.log(`usando y: ${y.descricao}`)
+
+      ///
+      y.descricao = 'Internet + tv + telefone'
+
+      console.log(`usando y: ${y.descricao}`)
+      console.log(`usando assinatura: ${assinatura.descricao}`)
+
+    </script>
+    
+  </head>
+  <body>
+    
+  </body>
+</html>

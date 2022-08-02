@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ES6</title>
+
+    
+
+    <script>
+
+      let pessoa = {
+        nome: 'Maria',
+        idade: 25
+      }
+
+      console.log(pessoa)
+
+      //---------------------
+
+      pessoa.sexo = 'Femino' /*criar atributos para o objeto*/
+
+      console.log(pessoa)
+
+      pessoa.dizerOi = () => console.log('Olá, tudo bem?') /*criar funções para o objeto*/
+      //            /\ /\ /\
+      //            um igual dps falando que é função e dps o que acontece com essa função
+      pessoa.dizerOi()
+
+      class Pessoa{
+        constructor(){
+          this.tamanho = 150
+          this.sexo = 'masculino'
+        }
+      }
+      let homem = new Pessoa()
+      /*adicionar uma atributo em uma classe com construtor não da certo pq todas as vezes vc vai ter que adicionar esse elemento a mais
+      a não ser que vc da um start novamente naquilo tudo e adicione de forma a a ser preenchida toda vez no futuro*/
+      
+    </script>
+    
+  </head>
+  <body>
+    
+  </body>
+</html>
