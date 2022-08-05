@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ES6</title>
+
+
+
+  <script>
+    // rest é juntar / spread é espalhar
+
+    //contexto spread
+
+    //string
+    let tituloArtigo = 'Como utilizar o operador rest/spread'
+    
+    console.log(tituloArtigo) /*aqui ele vai só mostrar*/
+    console.log(...tituloArtigo) /* aqui ele espalha e separa a frase intera*/
+    console.log([...tituloArtigo]) /*aqui ele separa cada letra em um indice de uma array */
+
+    //arrays
+    /*os 3 pontos ... espalha os conteudos das outras array aqui dentro*/
+    let listaCursos1 = ['NodeJS e MongoDB', 'ES6', 'TypeScript e Angular 4']
+    let listaCursos2 = ['Multiplataforma Android/IOS', 'Introdução ao GNU/Linux']
+    let listaCursosCompleto = ['Web Completo', 'Android Completo', ...listaCursos1, ...listaCursos2]
+
+    console.log(listaCursosCompleto)
+
+    //objetos
+    let pessoa = {
+      nome: 'João',
+      idade: 27
+    }
+    let clone = {
+      endereco: 'Rua Abc',
+      ...pessoa /*espalhar os atributos de pessoa dentro de clone*/
+    }
+
+    console.log(clone)
+  </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

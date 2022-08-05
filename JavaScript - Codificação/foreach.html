@@ -17,21 +17,21 @@
     listaFuncionarios[-12] = 'Fernanda'
     //forEach começa a partir de 0 (cuidado!!!)
 
-    var f = function(valor, indice){
+    var f = function (valor, indice) {
       console.log(valor, indice)
     }
-    
-    
-     listaFuncionarios2.forEach(function(valor, indice, array) {
+
+
+    listaFuncionarios2.forEach(function (valor, indice, array) {
       //logica
       console.log('---------')
       console.log('indice ' + indice + ' | valor:' + valor)
 
-      if(valor === 'Lucas'){
+      if (valor === 'Lucas') {
         array[indice] = 'Um novo valor'
       }
       console.log(array)
-    }) 
+    })
     console.log('---------')
     console.log('---------')
     console.log('---------')
@@ -43,30 +43,25 @@
     listaFrutas[4] = 'Limão'
     listaFrutas[5] = 'Laranja'
     listaFrutas[6] = 'Lichia'
-//metodo que faz a busca pela array inteira para procurar os valores e indices então vc pode chamar ele e ja fazer os tratamentos de busca dessa array como pode ver abaixo eu chamei 
-//o metodo passei os valores para tal e depois fiz as tratativas com o indice e valor quando ele fez a busca poderia ser algo que o usuário digita-se
-//posso utilizar todos os somente 1 parametro, mas sempre na ordem valor, indice e array, verificar no CTRL+espaço para ver o que pede como entrada
-//tecnica de wrapper, criar uma funçãoi dentro de uma variavel
+    //metodo que faz a busca pela array inteira para procurar os valores e indices então vc pode chamar ele e ja fazer os tratamentos de busca dessa array como pode ver abaixo eu chamei 
+    //o metodo passei os valores para tal e depois fiz as tratativas com o indice e valor quando ele fez a busca poderia ser algo que o usuário digita-se
+    //posso utilizar todos os somente 1 parametro, mas sempre na ordem valor, indice e array, verificar no CTRL+espaço para ver o que pede como entrada
+    //tecnica de wrapper, criar uma funçãoi dentro de uma variavel
 
-    listaFrutas.forEach(function(valor,indice,array){
-      
-      if(valor === 'Uva'){
-        document.write('Fruta encontranda dentro do parametro. <br/> Na posição '+ indice +' com o valor: '+ valor +'.')
+    listaFrutas.forEach(function (valor, indice, array) {
+
+      if (valor === 'Uva') {
+        document.write('Fruta encontranda dentro do parametro. <br/> Na posição ' + indice + ' com o valor: ' +
+          valor + '.')
         console.log(array)
-        
-      }else{
-        
+
+      } else {
+
       }
-      
-
-      
-      
-      
       //document.write('Este é o valor:' + valor +'<br/>')
-     // document.write('Este é o Indice 0:' + indice+'<br/>')
-     // document.write('Este é o Array 0:' + array+'<br/>')
+      // document.write('Este é o Indice 0:' + indice+'<br/>')
+      // document.write('Este é o Array 0:' + array+'<br/>')
     })
-
   </script>
 
 </head>

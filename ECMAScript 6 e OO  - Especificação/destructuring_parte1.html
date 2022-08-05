@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ES6</title>
+
+
+
+  <script>
+    //destructuring
+
+    let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão', 'Laranja']
+    let [f, g, h, i, j] = frutas
+    console.log(f, g, h, i, j)
+    //let [a, b, , c] = frutas //pular um indice
+    //let [] = frutas para vc destruturar
+    let [a, b = 'Abacate', c, d, e = 'Banana'] = frutas
+
+    //console.log(a,b,c,d,e)
+    let coisas = [
+      ['Abacaxi', 'Uva', 'Pera', 'Mamão'],
+      ['José', 'Maria']
+    ]
+    let [
+      [, , n3, , ],
+      [, n2]
+    ] = coisas
+    let [
+      [, n4, , , ],
+      [, n5]
+    ] = coisas
+
+    console.log(n2, n3)
+    console.log(n4, n5)
+  </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

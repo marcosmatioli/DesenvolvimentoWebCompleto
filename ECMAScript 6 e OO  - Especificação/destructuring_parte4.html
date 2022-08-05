@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ES6</title>
+
+  
+
+  <script>
+
+/*da pra desestruturar tanto em array como objeto então o que importa é o token para isso
+[] array
+{} objeto
+*/
+    //array
+      let arr = [10, 20, 30, 40]
+ 
+     let [z, ... x] = arr
+     /*pego a array colocou o primeiro valor em Z e depois usou o ... rest/spread para colocar todos os outros indices do vetor em x*/
+ 
+     console.log(z) 
+     console.log(x) 
+     
+
+    //objeto
+    let obj = {
+      a: 10, b: 20, c: 30, d: 40
+    }
+    let {...y} = obj
+    console.log(obj)
+    //console.log(b)
+    //console.log(a)
+    console.log(y)
+    var texto = 'Todos devem ter uma segunda chance'
+    let texto_spread = [...texto]
+    texto_spread.forEach(function(valor,indice,array){
+    if(valor === 'a' || valor === 'e' || valor === 'i' || valor === 'o' || valor === 'u' ){
+      console.log(`Indice: ${indice} foi encontrado a letra: ${valor}`)
+    } else {
+      texto_spread[indice] = ''
+    }
+  })
+    console.log(texto_spread)
+    
+  </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

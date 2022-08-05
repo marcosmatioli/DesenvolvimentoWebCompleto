@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ES6</title>
+
+
+
+  <script>
+    /*composição*/
+    let produto = {
+      /*é um objeto*/
+      descricao: 'Notebook',
+      preco: 1800,
+      detalhes: {
+        /*tem um detalhes*/
+        fabricante: 'Francês',
+        modelo: 'bmw',
+        modelo2: undefined
+      }
+    }
+
+    //token
+    //array => []
+    //objeto => {}
+    console.log(produto.descricao, produto.preco)
+    let {
+      descricao,
+      preco
+    } = produto
+    
+    console.log('--------------')
+    console.log(descricao, preco)
+    console.log('--------------')
+
+    // let { descricao, preco } = produto
+    let {
+      descricao: d,
+      preco: p
+    } = produto
+    console.log(d, p)
+    console.log('--------------')
+
+    let {
+      descricao: m,
+      preco: n = 1000,
+      desconto = 5
+    } = produto
+    console.log(m,n)
+    console.log('--------------')
+
+    let {
+      detalhes: {
+        fabricante: f,
+        modelo = 'não informado',
+        modelo2 = 'não informado'
+      }
+    } = produto
+    console.log(f, modelo,modelo2)
+    console.log(produto.detalhes.fabricante,produto.detalhes.modelo,produto.detalhes.modelo2)
+    /*não tem tratamento caso o valor no objeto literal estaja undefined*/
+  </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
