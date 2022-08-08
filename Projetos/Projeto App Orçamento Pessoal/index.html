@@ -91,11 +91,11 @@
       <div class="col-md-6">
         <select class="form-control" id="tipo">
           <option value="">Tipo</option>
-          <option value="1">Alimentação</option>
-          <option value="2">Educação</option>
-          <option value="3">Lazer</option>
-          <option value="4">Saúde</option>
-          <option value="5">Transporte</option>
+          <option value="Alimentação">Alimentação</option>
+          <option value="Educação">Educação</option>
+          <option value="Lazer">Lazer</option>
+          <option value="Saúde">Saúde</option>
+          <option value="Transporte">Transporte</option>
         </select>
       </div>
     </div>
@@ -113,6 +113,25 @@
         <button type="button" class="btn btn-primary" onclick="cadastrarDespesa()">
           <i class="fas fa-plus"></i>
         </button>
+      </div>
+    </div>
+  </div>
+  <!-- Modal gravação-->
+  <div class="modal fade" id="modalRegistraDespesa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div id="cor-modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modal-text">
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" id="btnModal"></button>
+        </div>
       </div>
     </div>
   </div>
