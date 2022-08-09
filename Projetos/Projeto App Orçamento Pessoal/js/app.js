@@ -41,52 +41,68 @@ class Bd {
         /** aqui fica o controlador do proximo item \/*/
         localStorage.setItem('id', id)
     }
-    recuperarTodosRegistro(){
+    recuperarTodosRegistro() {
         //array de despesa
         let despesas = Array()
 
         let id = localStorage.getItem('id')
         /**recupera todas as despesas cadastradas em localStorage */
-        for (let i = 1;i <= id; i++){
+        for (let i = 1; i <= id; i++) {
             let despesa = JSON.parse(localStorage.getItem(i))
 
             //existe a possibilidade de haver indices que foram pulados/removidos
-            if(despesa === null)
-            {
+            if (despesa === null) {
                 continue /**ele vai para a proxima iteração */
             }
+            despesa.id = i
             despesas.push(despesa)
         }
         return despesas
     }
-    pesquisar(despesa){
+    pesquisar(despesa) {
         let despesasFiltradas = Array()
         despesasFiltradas = this.recuperarTodosRegistro()
-        console.log(despesa)
-        console.log(despesasFiltradas)
+        //console.log(despesa)
+        //console.log(despesasFiltradas)
 
         //ano
         /**aqui o despesasFiltradas recebe a array só que agora com o filtro  nele */
-        if(despesa.ano != ''){
+        if (despesa.ano != '') {
             console.log('Filtro de ano')
-           despesasFiltradas = despesasFiltradas.filter(d => d.ano == despesa.ano)
+            despesasFiltradas = despesasFiltradas.filter(d => d.ano == despesa.ano)
         }
-        
         //mes
-        if(despesa.ano != ''){
+        if (despesa.mes != '') {
             console.log('Filtro de mes')
             despesasFiltradas = despesasFiltradas.filter(d => d.mes == despesa.mes)
-         }
-         console.log(despesasFiltradas)
-        //dia
-
-        //descrição
-
-        //valor
-
-        //tipo
-
         }
+        //dia
+        if (despesa.dia != '') {
+            console.log('Filtro de dia')
+            despesasFiltradas = despesasFiltradas.filter(d => d.dia == despesa.dia)
+        }
+        //descrição
+        if (despesa.descricao != '') {
+            console.log('Filtro de descricao')
+            despesasFiltradas = despesasFiltradas.filter(d => d.descricao == despesa.descricao)
+        }
+        //valor
+        if (despesa.valor != '') {
+            console.log('Filtro de valor')
+            despesasFiltradas = despesasFiltradas.filter(d => d.valor == despesa.valor)
+        }
+        //tipo
+        if (despesa.tipo != '') {
+            console.log('Filtro de tipo')
+            despesasFiltradas = despesasFiltradas.filter(d => d.tipo == despesa.tipo)
+        }
+        console.log(despesasFiltradas)
+        return despesasFiltradas
+    }
+    remover(id){
+        localStorage.removeItem(id)
+    }
+
 }
 
 let bd = new Bd()
@@ -112,7 +128,7 @@ function cadastrarDespesa() {
         bd.gravar(despesa)
         //dialog de sucesso em jquery #
         $('#modalRegistraDespesa').modal('show')
-        document.getElementById('exampleModalLabel').innerHTML= 'Registro inserido com sucesso'
+        document.getElementById('exampleModalLabel').innerHTML = 'Registro inserido com sucesso'
         document.getElementById('modal-text').innerHTML = 'Despesa foi cadastrada com sucesso!'
         document.getElementById('btnModal').innerHTML = 'Voltar'
         document.getElementById('cor-modal-header').className = 'modal-header text-success'
@@ -136,11 +152,11 @@ function cadastrarDespesa() {
         document.getElementById('valor').value = ''
         document.getElementById('descricao').value = ''
         */
-        
+
     } else {
         //dialog de erro em jquery $
         $('#modalRegistraDespesa').modal('show')
-        document.getElementById('exampleModalLabel').innerHTML= 'Erro na inclusão de despesa'
+        document.getElementById('exampleModalLabel').innerHTML = 'Erro na inclusão de despesa'
         document.getElementById('modal-text').innerHTML = 'Existem campos obrigatórios que não foram preenchidos'
         document.getElementById('btnModal').innerHTML = 'Voltar e Corrigir'
         document.getElementById('cor-modal-header').className = 'modal-header text-danger'
@@ -148,12 +164,17 @@ function cadastrarDespesa() {
         console.log('Dados invalidos')
     }
 }
-function carregaListaDespesa(){
-    let despesas = Array()
-    despesas =  bd.recuperarTodosRegistro()
+
+function carregaListaDespesa(despesas = Array(), filtro = false) {
+
+    if (despesas.length == 0 && filtro == false) {
+        despesas = bd.recuperarTodosRegistro()
+    }
     /**estamos selecionando o elemento tbody da tabela */
     let listaDespesa = document.getElementById('listaDespesa')
-    despesas.forEach(function (d){
+    listaDespesa.innerHTML = ''
+
+    despesas.forEach(function (d) {
         console.log(d)
         /**criando as linhas 1 linha */
         let linha = listaDespesa.insertRow()
@@ -167,15 +188,34 @@ function carregaListaDespesa(){
          */
         linha.insertCell(2).innerHTML = `${d.descricao}`
         linha.insertCell(3).innerHTML = `${d.valor}`
+
+        let btn = document.createElement('button')
+        btn.className = 'btn btn-danger'
+        btn.innerHTML = '<i class="fas fa-times"</i>'
+        btn.id = `id_despesas_${d.id}`
+        btn.onclick = function(){
+            //remover o id_despesas_
+            let id = this.id.replace('id_despesas_','')
+            console.log(id)
+            bd.remover(id)
+            window.location.reload()    
+        }
+        linha.insertCell(4).append(btn)
+        
+        console.log(d)
     })
+    /**criar botão de exclusão */
+    
 }
-function pesquisarDespesa(){
+
+function pesquisarDespesa() {
     let ano = document.getElementById('ano').value
     let mes = document.getElementById('mes').value
     let dia = document.getElementById('dia').value
     let tipo = document.getElementById('tipo').value
     let descricao = document.getElementById('descricao').value
     let valor = document.getElementById('valor').value
-    let despesa = new Despesa(ano,mes,dia,tipo,descricao,valor)
-    bd.pesquisar(despesa)
+    let despesa = new Despesa(ano, mes, dia, tipo, descricao, valor)
+    let despesas = bd.pesquisar(despesa)
+    carregaListaDespesa(despesas,true)
 }
