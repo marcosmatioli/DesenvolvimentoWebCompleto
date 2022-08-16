@@ -11,7 +11,7 @@
     //recuperacao da data atual ou data corrente
 
     // dia/mes/ano horas:minutos
-    echo date('d/m/Y H:i');
+    
 
     echo '<br />';
     echo date_default_timezone_get(); //está em Berlim
@@ -19,10 +19,16 @@
     echo '<br />';
     echo date('d/m/Y H:i');
     */
-
+    echo date_default_timezone_get();
+    date_default_timezone_set('America/Sao_Paulo'); /**cada cidade tem seu time zone */
+    echo('<br/>');
+    echo date_default_timezone_get();
+    echo('<br/>');
+    echo date('d/m/Y H:i');
+    echo('<br/>');
     $data_inicial = '2018-04-24';
     $data_final = '2018-05-15';
-
+    
     //timestamp
     //01/01/1970 -- 2018-04-24 (js -> milissegundos / php -> segundos)
     $time_inicial = strtotime($data_inicial);
@@ -31,7 +37,7 @@
     echo '<br />';
     echo $data_final . ' - ' . $time_final;
 
-    $diferenca_times = $time_final - $time_inicial;
+    $diferenca_times = abs($time_final - $time_inicial); /**abs(número aqui) */
     echo '<br />';
     echo 'A diferença de segundos entre a data inicial e final é: ' . $diferenca_times;
 
@@ -40,7 +46,7 @@
     echo 'Um dia possui ' . $segundos_existem_dia . ' segundos';
 
     $diferenca_de_dias_entre_as_datas = $diferenca_times / $segundos_existem_dia;
-    echo '<br / >';
+    echo '<br />';
     echo 'A diferença em dias é: ' . $diferenca_de_dias_entre_as_datas;
     ?>
 

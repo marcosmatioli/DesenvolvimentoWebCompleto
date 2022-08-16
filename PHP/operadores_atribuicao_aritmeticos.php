@@ -23,7 +23,7 @@
     //$x -= $y;
     //$x /= $y;
     //$x *= $y;
-    //$x %= $y;
+    //$x %= $y; 
     $x += 5;
     $y = 5 + 5;
     echo "<br/>Valor de x:$x<br/>Valor de y:$y";

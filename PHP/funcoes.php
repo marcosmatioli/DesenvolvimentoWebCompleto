@@ -7,7 +7,7 @@
 
 <body>
     <?php
-    //void
+    //void returna o troço
     function exibirBoasVindas() {
         echo "Bem-vindo ao curso de PHP! <br />";
     }
@@ -20,7 +20,7 @@
         return $area;
     }
 
-    echo calcularAreaTerreno(5, 25);
+    echo calcularAreaTerreno(5, 25); /**aqui ele ja retorna no echo e printa na tela */
     echo '<br />';
     echo calcularAreaTerreno(15, 125);
     echo '<br />';
@@ -32,7 +32,7 @@
     //atribuir a uma variavel
     $resultado = calcularAreaTerreno(5, 25);
     echo "O valor da variavel resultado é $resultado";
-
+    
     ?>
 </body>
 

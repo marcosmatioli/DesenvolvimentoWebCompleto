@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Curso PHP - Atividade 1</title>
+    <title>Curso PHP - Atividade 2</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
     $salario = 5000;
 
     function calculaImposto($salario){
-        $salarioImposto = '';
+        $salarioImposto = 0;
 
         if($salario <= 1903.98){
             $salario = 0;
