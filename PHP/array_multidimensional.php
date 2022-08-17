@@ -20,8 +20,19 @@
     echo $lista_coisas['frutas'][3];
     echo '<br />';
     echo $lista_coisas['pessoas'][2];
+    echo '<br />';
+    $lista_coisas['carros'] = ['Carro','Moto','Carrinho','Fusca'];
+    echo '<br />';
+    echo $lista_coisas['carros'][3];
+    echo '<pre>';
+    echo var_dump($lista_coisas);
+    echo '</pre>';
+    echo '<br/>';
+    echo '<pre>';
+    print_r($lista_coisas);
+    echo '</pre>';
 
-
+    /**array de arrays basicamente isso */
     ?>
 </body>
 

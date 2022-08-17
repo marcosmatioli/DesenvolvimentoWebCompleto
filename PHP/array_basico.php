@@ -29,7 +29,7 @@
     echo $lista_frutas[4];
     */
     $valor = 'Nome Funcionario: ';
-    $lista_func = array('Marcos','José','Rafaella','Frank','Aislan','Gusto',20,20.9,getrandmax());
+    $lista_func = array('Marcos' => 'Rafaella','José','Frank','Aislan','Gusto',20,20.9,getrandmax(),);
     $lista_func[] = 'Paulo';
     echo '<pre>';
     var_dump($lista_func); /**um jeito de mostrar a array */
@@ -39,7 +39,7 @@
     print_r($lista_func);
     var_dump($lista_func); /**outro jeito de mostrar a array */
     echo '<pre/>';
-    /** var_dump / print_r */
+    /** var_dump / print_r / recursos para teste */
 
 /** 
  * 

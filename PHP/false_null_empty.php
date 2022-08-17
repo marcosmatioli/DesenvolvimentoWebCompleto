@@ -21,11 +21,20 @@
         echo 'Não, a variável não é null';
     }
     echo '<br />';
+
     if(is_null($funcionario2)){ 
         echo 'Sim, a variável é null';
     } else {
         echo 'Não, a variável não é null';
     }
+
+    echo '<br />';
+    if(is_null($funcionario3)){ 
+        echo 'Sim, a variável é null';
+    } else {
+        echo 'Não, a variável não é null';
+    }
+
     echo '<hr />';
     //valores vazios
     if(empty($funcionario1)){ 
@@ -47,6 +56,17 @@
     } else {
         echo 'Não, a variável não é vazia';
     }
+    /**
+     * aqui a gente aprende que usando os is_null === null então temos:
+     * o null é null
+     * o vazio não é null
+     * o false não é null
+     * --------------------
+     * agora a gente aprende que EMPTY === vazio então temos:
+     * o null é vazio
+     * o vazio é vazio
+     * o false é vazio
+     */
     ?>
 </body>
 
