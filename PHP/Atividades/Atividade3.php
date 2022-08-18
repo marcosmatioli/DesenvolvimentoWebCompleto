@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Curso PHP - Atividade 3</title>
 </head>
-
 <body>
     
     <?php 
@@ -111,7 +110,7 @@
       * e quem imaginaria que eu iria tentar denovo em menos de 1hora apsoksapok
      */
     echo '<br/>';
-    echo ' Se o retorno foi 1 então ele teve sucesso em ordenar a array: ' .asort($numeros_repitidos); /**como o retorno foi 1 */
+    echo ' Se o retorno foi 1 então ele teve sucesso em ordenar a array: ' .sort($numeros_repitidos); /**como o retorno foi 1 */
     echo '<pre>';
      var_dump($numeros_repitidos);
      echo '<pre/>';

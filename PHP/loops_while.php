@@ -15,7 +15,8 @@
 
         $num++; //critério de parada.
         if ($num == 2 || $num == 6) {
-            continue;
+            continue;/**ele volta para a
+             parte de cima e não faz a impressão do valor */
         }
         echo "$num <br />";
     }
