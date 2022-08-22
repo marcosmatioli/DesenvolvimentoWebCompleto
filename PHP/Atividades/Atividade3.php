@@ -7,54 +7,6 @@
 <body>
     
     <?php 
-
-        function quicksort($array, $l = 0, $r = 0)
-        {
-            if ($r === 0) {
-                $r = count($array) - 1;
-            }
-            $i = $l;
-            $j = $r;
-            $x = $array[($l + $r) / 2];
-            do {
-                while ($array[$i] < $x) {
-                    $i++;
-                }
-                while ($array[$j] > $x) {
-                    $j--;
-                }
-                if ($i <= $j) {
-                    if ($array[$i] > $array[$j]) {
-                        list($array[$i], $array[$j]) = array($array[$j], $array[$i]);
-                    }
-                    $i++;
-                    $j--;
-                }
-            } while ($i <= $j);
-            if ($i < $r) {
-                quicksort($array, $i, $r);
-            }
-            if ($j > $l) {
-                quicksort($array, $l, $j);
-            }
-        }
-
-    /**---------------------------------------------- */
-        function bubbleSort($array)
-    {
-    for($i = 0; $i < count($array); $i++)
-    {
-        for($j = 0; $j < count($array) - 1; $j++)
-        {
-        if($array[$j] > $array[$j + 1])
-        {
-            $aux = $array[$j];
-            $array[$j] = $array[$j + 1];
-            $array[$j + 1] = $aux;
-        }
-        }
-    }
-    };
     /**----------------------------------------------------------------- */
     /**
      * Crie um script capaz de produzir, atraves de um laço de repetição, uma array com 6 elementos
@@ -82,7 +34,22 @@
      var_dump($numeros_mega);
      echo '<pre/>';
      echo '<hr/>';
+     /**utilizando o while para preencher a array (lição do gabarito)*/
 
+     $numeros_mega2 = array();
+
+     while(count($numeros_mega2)<=5){
+        $number1 = rand(1,60);
+        if(!in_array($number1,$numeros_mega2)){
+            $numeros_mega2[]=$number1;
+        }
+     }
+     echo '2 - Array Numeros Mega:';
+     echo '<pre>';
+     var_dump($numeros_mega2);
+     echo '<pre/>';
+     echo '<hr/>';
+     
      /** esse aqui abaixo é um for que preenche uma array com numeros aleatorios nas posições da array, gerando assim uma array com
       * 60 numeros aleatorios nas posições da array.
       * aqui também temos a verificação de todos os numeros, se for repetido printa na tela
@@ -114,6 +81,8 @@
     echo '<pre>';
      var_dump($numeros_repitidos);
      echo '<pre/>';
+
+     
     ?>
 
 </body>
