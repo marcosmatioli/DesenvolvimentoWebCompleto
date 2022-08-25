@@ -104,7 +104,7 @@
     echo '</pre>';
     echo '<br/>';
     echo '<br/>';
-    echo 'explode teste / é a desestruturação de string, então a gente coloca o demilitador e colcoa para que cada vez que encontrar uma barra crie um novo indice com aquele simbolo';
+    echo 'explode teste / é a desestruturação de string, então a gente coloca o demilitador e coloca para que cada vez que encontrar uma barra crie um novo indice com aquele simbolo';
     echo '<hr/>';
     //-------------------------------------------------------------------------------------------------
     //implode -> junta os elementos de um array em uma string
