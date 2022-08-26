@@ -2,3 +2,6 @@
 4#teste mari#Hardware#teste teste teste
 2#teste user#Rede#teste teste teste
 1#teste adm#Software#teste teste teste
+1#teste adm 2#Software#erro no excel
+4#teste maria 2#Software#erro no word do computador me ajdua
+3#teste jose 2#Software#Erro na digitalização do software aqui no meu pc-

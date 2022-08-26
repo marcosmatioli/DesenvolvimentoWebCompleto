@@ -3,8 +3,10 @@ require_once('validador_acesso.php');
 ?>
 
 <?php
+
 $chamados = array();
-$arquivo = fopen('arquivo.txt','r');
+//$arquivo = fopen('arquivo.txt','r');
+$arquivo = fopen('../../app_help_desk/arquivo.txt','r');
 //enquanto houve linhas/registro para serem recupoerados
 /**feof() é uma função nativa do php que percorre o arquivo até encontrar o final do arquivo End of line 'EOL' 
  * então quando a gente entra no arquivo não é final do arquivo então ele retorna false, e se for false ele não vai entrar no while
@@ -13,16 +15,19 @@ $arquivo = fopen('arquivo.txt','r');
 */
 while(!feof($arquivo)){
   $registro = fgets($arquivo); // pega a linha inteira até a quebra de linha
-  $chamados[] = $registro;
-  
+  $array_explode = explode('#',$registro);
+  if($_SESSION['perfil_id'] == 2 ){
+    if($_SESSION['id'] != $array_explode[0]){
+      continue;
+    }
+  }
+  if(count($array_explode) <3){
+    continue;
+  }
+  $chamados[] = explode('#',$registro);
 }
 //fechar o arquivo aberto
 fclose($arquivo);
-/**
- * echo '<pre>';
-  *print_r($chamados);
-  *echo '<pre/>';
- */
   
 ?>
 <html>
@@ -67,16 +72,26 @@ fclose($arquivo);
             <div class="card-body">
               <?php foreach($chamados as $chamado){?>
                 <?php
-                $chamado_dados = explode('#',$chamado);
-                if(count($chamado_dados)<3){
-                  continue;
-                }
+                //$chamado_dados = explode('#',$chamado);
+                /*if($_SESSION['perfil_id'] == 2){
+                  //e esse if serve para saber se o usuario é adm, caso ele não seja ja vai sair do if e mostrar todos os chamados
+                  // agora se for um usuario ele vai pegar o di desse usuario e ver se tem chamado desse id
+                  // então ele vai pegar e vai plotar os chamados do id em questão
+                   
+                  if($_SESSION['id'] != $chamado_dados[0]){
+                    // esse if serve para fazer aparecer somente os chamados do usuario
+                    continue;
+                  }
+                }*/
+                //if(count($chamado_dados)<3){
+                 // continue;
+                //}
                 ?>
               <div class="card mb-3 bg-light">
                 <div class="card-body">
-                  <h5 class="card-title"><?=$chamado_dados[1]?></h5>
-                  <h6 class="card-subtitle mb-2 text-muted"><?=$chamado_dados[2]?></h6>
-                  <p class="card-text"><?=$chamado_dados[3]?></p>
+                  <h5 class="card-title"><?=$chamado[1]?></h5>
+                  <h6 class="card-subtitle mb-2 text-muted"><?=$chamado[2]?></h6>
+                  <p class="card-text"><?=$chamado[3]?></p>
                 </div>
               </div>
                 <? } //termino da chaves?>
