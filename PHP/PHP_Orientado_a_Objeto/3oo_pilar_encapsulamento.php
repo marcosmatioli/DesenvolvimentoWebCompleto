@@ -99,16 +99,7 @@ $filho = new Filho();
     print_r($filho);
     echo '</pre>';
 
-    
-    
-    echo '<br/>';
-    $filho->x();
-
-
-
-
-
-      /* echo $filho->getAtributo('nome');
+    /* echo $filho->getAtributo('nome');
     echo '<br />';
     $filho->setAtributo('nome', 'Pereira');
     echo '<pre>';
@@ -131,3 +122,7 @@ $filho = new Filho();
     echo '<pre>';
     print_r($filho);
     echo '</pre>'; */
+
+    $fiho->executarMania();
+    echo '<br/>';
+    $filho->x();
